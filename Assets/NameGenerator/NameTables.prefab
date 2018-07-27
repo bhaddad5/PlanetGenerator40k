@@ -1,0 +1,203 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1837761957224064}
+  m_IsPrefabAsset: 1
+--- !u!1 &1837761957224064
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4190562869083376}
+  - component: {fileID: 114863544814756102}
+  - component: {fileID: 114249880177390124}
+  - component: {fileID: 114533125124017188}
+  - component: {fileID: 114029587723608824}
+  - component: {fileID: 114126053539523784}
+  - component: {fileID: 114606988927920354}
+  m_Layer: 0
+  m_Name: NameTables
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4190562869083376
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1837761957224064}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114029587723608824
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1837761957224064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60d82449a6f24a44599f39dd7935712f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TableName: PlanetNumeral
+  Names: 'I,II,III,IV,V,VI,VII,VIII,IX,X,XI,XII,XIII,
+
+    a,b,c,d,
+
+    Prime,
+
+    Primaris,
+
+    Secundus,
+
+    Tertius,
+
+    Major,
+
+    Minor'
+--- !u!114 &114126053539523784
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1837761957224064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60d82449a6f24a44599f39dd7935712f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TableName: Person
+  Names: 'Templar,
+
+    Knight,
+
+    Warrior,
+
+    Primarch,
+
+    Heretic,
+
+    Purifier,
+
+    Crusader,
+
+    Prince,
+
+    King,
+
+    Lord,
+
+    Renegade,
+
+    Explorer'
+--- !u!114 &114249880177390124
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1837761957224064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60d82449a6f24a44599f39dd7935712f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TableName: PlanetPrefix
+  Names: 'Thrac,
+
+    Acc,
+
+    Ad,
+
+    Ako,
+
+    Agh'
+--- !u!114 &114533125124017188
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1837761957224064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60d82449a6f24a44599f39dd7935712f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TableName: PlanetSuffix
+  Names: 'ia,
+
+    um,
+
+    ius,
+
+    atran,
+
+    osha,
+
+    ern,
+
+    ost,
+
+    ol,
+
+    arit'
+--- !u!114 &114606988927920354
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1837761957224064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60d82449a6f24a44599f39dd7935712f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TableName: PersonPlace
+  Names: 'Rest,
+
+    Repose,
+
+    Refuge,
+
+    Lament,
+
+    Stand,
+
+    Fall,
+
+    Ascent,
+
+    Progress'
+--- !u!114 &114863544814756102
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1837761957224064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60d82449a6f24a44599f39dd7935712f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TableName: PlanetName
+  Names: '{PlanetPrefix}{PlanetSuffix} {PlanetNumeral},
+
+    {PlanetPrefix}{PlanetSuffix},
+
+    {Person}''s {PersonPlace}'
