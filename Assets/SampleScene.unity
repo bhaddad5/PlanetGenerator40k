@@ -607,7 +607,7 @@ GameObject:
   - component: {fileID: 1258975863}
   - component: {fileID: 1258975862}
   m_Layer: 0
-  m_Name: TableSpawner
+  m_Name: TextTableSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -728,6 +728,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlanetName: {fileID: 2055814285}
   PlanetTypeName: {fileID: 496937887}
+  planetGen: {fileID: 1882881217}
 --- !u!1 &1882881216
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TableSpawner : MonoBehaviour {
-
+public class TableSpawner : MonoBehaviour
+{
 	public List<NameTable> Tables = new List<NameTable>();
 
 	void Awake()

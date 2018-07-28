@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class Planet
 {
-	public string Name = NameBuilder.GetName("PlanetName");
+	public string Name => NameBuilder.GetName("PlanetName");
 	public virtual string PlanetTypeName => "";
 }
 
