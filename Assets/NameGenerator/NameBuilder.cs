@@ -7,16 +7,8 @@ public static class NameBuilder
 {
 	private static Dictionary<string, List<string>> nameTables = new Dictionary<string, List<string>>();
 
-	private static bool nameTablesFound = false;
-
 	public static string GetName(string tableName)
 	{
-		if (!nameTablesFound)
-		{
-			FindNameTables();
-			nameTablesFound = true;
-		}
-
 		if (!nameTables.ContainsKey(tableName))
 			throw new Exception("Could not find table: " + tableName);
 
@@ -36,12 +28,8 @@ public static class NameBuilder
 		return result;
 	}
 
-	private static void FindNameTables()
+	public static void AddTable(NameTable nameTable)
 	{
-		var foundObjects = Resources.FindObjectsOfTypeAll<NameTable>();
-		foreach (NameTable nameTable in foundObjects)
-		{
-			nameTables[nameTable.TableName] = nameTable.GetNameOptions();
-		}
+		nameTables[nameTable.TableName] = nameTable.GetNameOptions();
 	}
 }
