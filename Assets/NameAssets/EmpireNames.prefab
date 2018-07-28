@@ -19,9 +19,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4526545643370800}
+  - component: {fileID: 114022692177983420}
+  - component: {fileID: 114661337778119552}
   - component: {fileID: 114851948667432940}
   - component: {fileID: 114431912812624758}
   - component: {fileID: 114433845963818078}
+  - component: {fileID: 114132574890668456}
+  - component: {fileID: 114750340287233634}
   m_Layer: 0
   m_Name: EmpireNames
   m_TagString: Untagged
@@ -42,6 +46,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114022692177983420
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1932461708800750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60d82449a6f24a44599f39dd7935712f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TableName: PlanetRulerName
+  Names: '{EmpireFirstName} {Numeral},
+
+    {PlanetRulerTitle} {EmpireFirstName} {Numeral},
+
+    {PlanetRulerTitle} {EmpireFirstName},
+
+    {PlanetRulerTitle} {EmpireFirstName} the {RulerAdjective}'
+--- !u!114 &114132574890668456
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1932461708800750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60d82449a6f24a44599f39dd7935712f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TableName: Numeral
+  Names: I, II,III,IV,V,VI,VII,VIII,IX,X,XI,XII,XIII,XIV,XV,XVI,XVII,XVIII,XIX,XX,XXI,XXII,XXIII,XXIV,XXV
 --- !u!114 &114431912812624758
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -92,6 +128,76 @@ MonoBehaviour:
     oth,
 
     ial'
+--- !u!114 &114661337778119552
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1932461708800750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60d82449a6f24a44599f39dd7935712f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TableName: PlanetRulerTitle
+  Names: 'Lord,
+
+    High Lord,
+
+    Prince,
+
+    King,
+
+    Trade Prince,
+
+    Governor,
+
+    General,
+
+    Administrator,
+
+    Ecclesiarch'
+--- !u!114 &114750340287233634
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1932461708800750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60d82449a6f24a44599f39dd7935712f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TableName: RulerAdjective
+  Names: 'Just,
+
+    Unjust,
+
+    Explorer,
+
+    Warmonger,
+
+    Strong,
+
+    Great,
+
+    Lesser,
+
+    Mighty,
+
+    Wealking,
+
+    Unworthy,
+
+    Wise,
+
+    Foolish,
+
+    Old,
+
+    Elder,
+
+    Younger,'
 --- !u!114 &114851948667432940
 MonoBehaviour:
   m_ObjectHideFlags: 1

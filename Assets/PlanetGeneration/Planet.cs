@@ -6,6 +6,7 @@ public abstract class Planet
 {
 	public string Name => NameBuilder.GetName("PlanetName");
 	public virtual string PlanetTypeName => "";
+	public string Ruler => "Ruler: " + NameBuilder.GetName("PlanetRulerName");
 }
 
 public class AgriPlanet : Planet

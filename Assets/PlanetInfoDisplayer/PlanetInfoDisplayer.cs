@@ -8,6 +8,7 @@ public class PlanetInfoDisplayer : MonoBehaviour
 {
 	public TMP_Text PlanetName;
 	public TMP_Text PlanetTypeName;
+	public TMP_Text RulerName;
 
 	public PlanetGenerator planetGen;
 
@@ -15,5 +16,6 @@ public class PlanetInfoDisplayer : MonoBehaviour
 	{
 		PlanetName.text = planet.Name;
 		PlanetTypeName.text = planet.PlanetTypeName;
+		RulerName.text = planet.Ruler;
 	}
 }
