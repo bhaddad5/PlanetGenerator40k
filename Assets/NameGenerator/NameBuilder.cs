@@ -7,8 +7,6 @@ public static class NameBuilder
 {
 	private static Dictionary<string, List<string>> nameTables = new Dictionary<string, List<string>>();
 
-	private static bool namesTablesFilled = false;
-
 	public static string GetName(string tableName)
 	{
 		if (!nameTables.ContainsKey(tableName))
@@ -32,7 +30,6 @@ public static class NameBuilder
 
 	public static void AddTable(NameTable nameTable)
 	{
-		namesTablesFilled = true;
 		nameTables[nameTable.TableName] = nameTable.GetNameOptions();
 	}
 }

@@ -9,32 +9,31 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1932461708800750}
+  m_RootGameObject: {fileID: 1612589058884906}
   m_IsPrefabAsset: 1
---- !u!1 &1932461708800750
+--- !u!1 &1612589058884906
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4526545643370800}
-  - component: {fileID: 114851948667432940}
-  - component: {fileID: 114431912812624758}
-  - component: {fileID: 114433845963818078}
+  - component: {fileID: 4100324242721270}
+  - component: {fileID: 114025674893790820}
+  - component: {fileID: 114074651443043628}
   m_Layer: 0
-  m_Name: EmpireNames
+  m_Name: EmpireLeaders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4526545643370800
+--- !u!4 &4100324242721270
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1932461708800750}
+  m_GameObject: {fileID: 1612589058884906}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -42,66 +41,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114431912812624758
+--- !u!114 &114025674893790820
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1932461708800750}
+  m_GameObject: {fileID: 1612589058884906}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 60d82449a6f24a44599f39dd7935712f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TableName: FirstNamePrefix
-  Names: 'Ibr,
+  TableName: PlanetRulerName
+  Names: '{EmpireFirstName} {Numeral},
 
-    Mel,
+    {PlanetRulerTitle} {EmpireFirstName} {Numeral},
 
-    Gar,
+    {PlanetRulerTitle} {EmpireFirstName},
 
-    Corn,
-
-    Caiph,
-
-    Har,
-
-    T,
-
-    Gabr'
---- !u!114 &114433845963818078
+    {PlanetRulerTitle} {EmpireFirstName} the {RulerAdjective}'
+--- !u!114 &114074651443043628
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1932461708800750}
+  m_GameObject: {fileID: 1612589058884906}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 60d82449a6f24a44599f39dd7935712f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TableName: FirstNameSuffix
-  Names: 'ar,
+  TableName: EmpireArmyLeader
+  Names: '{EmpireArmyLeaderTitle} {EmpireFirstName},
 
-    as,
-
-    am,
-
-    im,
-
-    oth,
-
-    ial'
---- !u!114 &114851948667432940
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1932461708800750}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60d82449a6f24a44599f39dd7935712f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TableName: EmpireFirstName
-  Names: '{FirstNamePrefix}{FirstNameSuffix}'
+    {EmpireArmyLeaderTitle} {EmpireFirstName} the {WarLeaderAdjective}'

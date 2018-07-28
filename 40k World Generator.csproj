@@ -642,7 +642,9 @@
     <Compile Include="Assets\NameGenerator\NameBuilder.cs" />
     <Compile Include="Assets\NameGenerator\NameTable.cs" />
     <Compile Include="Assets\NameGenerator\TableSpawner.cs" />
+    <Compile Include="Assets\PlanetGeneration\Army.cs" />
     <Compile Include="Assets\PlanetGeneration\Planet.cs" />
+    <Compile Include="Assets\PlanetGeneration\PlanetDefenseForce.cs" />
     <Compile Include="Assets\PlanetGeneration\PlanetGenerator.cs" />
     <Compile Include="Assets\PlanetInfoDisplayer\PlanetInfoDisplayer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />

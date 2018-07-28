@@ -6,6 +6,11 @@ public class PlanetGenerator : MonoBehaviour
 {
 	public PlanetInfoDisplayer PlanetDisplayer;
 
+	void Start()
+	{
+		GeneratePlanet();
+	}
+
 	public void GeneratePlanet()
 	{
 		Planet planet = GetPlanet();
@@ -13,14 +18,16 @@ public class PlanetGenerator : MonoBehaviour
 		PlanetDisplayer.DisplayPlanet(planet);
 	}
 
-	public List<Planet> PlanetTypes = new List<Planet>()
+	private List<Planet> PlanetTypes = new List<Planet>()
 	{
 		new HiveWorld(),
 		new AgriPlanet(),
 		new CivilizedWorld(),
+		new FeudalWorld(),
+		new ForgeWorld(),
 	};
 
-	public Planet GetPlanet()
+	private Planet GetPlanet()
 	{
 		return PlanetTypes[Random.Range(0, PlanetTypes.Count)];
 	}

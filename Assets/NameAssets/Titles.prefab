@@ -9,32 +9,32 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1932461708800750}
+  m_RootGameObject: {fileID: 1553914403989214}
   m_IsPrefabAsset: 1
---- !u!1 &1932461708800750
+--- !u!1 &1553914403989214
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4526545643370800}
-  - component: {fileID: 114851948667432940}
-  - component: {fileID: 114431912812624758}
-  - component: {fileID: 114433845963818078}
+  - component: {fileID: 4916724819634846}
+  - component: {fileID: 114285432855423464}
+  - component: {fileID: 114450315166820180}
+  - component: {fileID: 114769921349920044}
   m_Layer: 0
-  m_Name: EmpireNames
+  m_Name: Titles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4526545643370800
+--- !u!4 &4916724819634846
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1932461708800750}
+  m_GameObject: {fileID: 1553914403989214}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -42,66 +42,100 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114431912812624758
+--- !u!114 &114285432855423464
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1932461708800750}
+  m_GameObject: {fileID: 1553914403989214}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 60d82449a6f24a44599f39dd7935712f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TableName: FirstNamePrefix
-  Names: 'Ibr,
+  TableName: PlanetRulerTitle
+  Names: 'Trade Prince,
 
-    Mel,
+    Governor,
 
-    Gar,
+    General,
 
-    Corn,
+    Administrator,
 
-    Caiph,
+    Ecclesiarch,
 
-    Har,
+    {FeudalTitles},
 
-    T,
+    {FeudalTitles},
 
-    Gabr'
---- !u!114 &114433845963818078
+    {FeudalTitles},
+
+    {EmpireArmyLeaderTitle},
+
+    {EmpireArmyLeaderTitle},
+
+    {EmpireArmyLeaderTitle}'
+--- !u!114 &114450315166820180
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1932461708800750}
+  m_GameObject: {fileID: 1553914403989214}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 60d82449a6f24a44599f39dd7935712f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TableName: FirstNameSuffix
-  Names: 'ar,
+  TableName: EmpireArmyLeaderTitle
+  Names: 'General,
 
-    as,
+    Colonel,
 
-    am,
+    Commissar,
 
-    im,
+    Colonel-Commissar,
 
-    oth,
+    Commander,
 
-    ial'
---- !u!114 &114851948667432940
+    Lord Commander,
+
+    Lord General,
+
+    High General,
+
+    Marshall,
+
+    Warmaster,
+
+    {FeudalTitles},
+
+    {FeudalTitles}
+
+'
+--- !u!114 &114769921349920044
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1932461708800750}
+  m_GameObject: {fileID: 1553914403989214}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 60d82449a6f24a44599f39dd7935712f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TableName: EmpireFirstName
-  Names: '{FirstNamePrefix}{FirstNameSuffix}'
+  TableName: FeudalTitles
+  Names: 'Prince,
+
+    King,
+
+    Lord,
+
+    High Lord,
+
+    Baron,
+
+    Count,
+
+    Duke,
+
+    Grand Duke'
