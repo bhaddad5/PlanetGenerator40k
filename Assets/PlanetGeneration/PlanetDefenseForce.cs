@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class PlanetDefenseForce
 {
-	public virtual int NumArmies => 2;
+	public virtual int NumArmies => 1;
 
 	protected virtual List<Army> ArmyTypes => new List<Army>()
 	{
@@ -22,14 +22,14 @@ public abstract class PlanetDefenseForce
 	}
 }
 
+public class AgriWorldDefenseForce : PlanetDefenseForce
+{
+	public override int NumArmies => 1;
+}
+
 public class CivilizedWorldDefenseForce : PlanetDefenseForce
 {
 	public override int NumArmies => 2;
-
-	protected override List<Army> ArmyTypes => new List<Army>()
-	{
-		new GuardArmy(),
-	};
 }
 
 public class HiveWorldDefenseForce : PlanetDefenseForce
@@ -58,7 +58,7 @@ public class ForgeWorldDefenseForce : PlanetDefenseForce
 
 public class FeudalWorldDefenseForce : PlanetDefenseForce
 {
-	public override int NumArmies => 3;
+	public override int NumArmies => 1;
 
 	protected override List<Army> ArmyTypes => new List<Army>()
 	{

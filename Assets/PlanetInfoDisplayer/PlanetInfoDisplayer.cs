@@ -19,11 +19,11 @@ public class PlanetInfoDisplayer : MonoBehaviour
 	{
 		PlanetName.text = planet.Name;
 		PlanetTypeName.text = planet.PlanetTypeName;
-		RulerName.text = planet.Ruler;
+		RulerName.text = "Ruler: " + planet.Ruler;
 
-		for (int i = 0; i < ArmyDisplayParent.childCount; i++)
+		foreach (Transform child in ArmyDisplayParent.transform)
 		{
-			Destroy(ArmyDisplayParent.GetChild(i));
+			GameObject.Destroy(child.gameObject);
 		}
 
 		foreach (Army army in planet.Defenses.PlanetaryArmies())

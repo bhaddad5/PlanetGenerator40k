@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4558971285243886}
   - component: {fileID: 114811673747189016}
+  - component: {fileID: 114582345336654988}
   m_Layer: 0
   m_Name: OrganizationNames
   m_TagString: Untagged
@@ -40,6 +41,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114582345336654988
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1674283437261354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60d82449a6f24a44599f39dd7935712f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TableName: OrganizationGoalTowardsThing
+  Names: 'Swords,
+
+    Defenders,
+
+    Protectors,
+
+    Guardians,
+
+    Reclaimers,
+
+    Explorators,
+
+    Oppressors,
+
+    Loyalists'
 --- !u!114 &114811673747189016
 MonoBehaviour:
   m_ObjectHideFlags: 1

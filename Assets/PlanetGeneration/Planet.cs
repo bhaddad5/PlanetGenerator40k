@@ -4,9 +4,9 @@ using UnityEngine;
 
 public abstract class Planet
 {
-	public string Name => NameBuilder.GetName("PlanetName");
+	public virtual string Name => NameBuilder.GetName("PlanetName");
 	public virtual string PlanetTypeName => "";
-	public string Ruler => "Ruler: " + NameBuilder.GetName("PlanetRulerName");
+	public virtual string Ruler => NameBuilder.GetName("PlanetRulerName");
 	public virtual PlanetDefenseForce Defenses => new CivilizedWorldDefenseForce();
 }
 
@@ -28,6 +28,7 @@ public class CivilizedWorld : Planet
 
 public class FeudalWorld : Planet
 {
+	public override string Ruler => NameBuilder.GetName("FeudalPlanetRuler");
 	public override string PlanetTypeName => "Feudal World";
 	public override PlanetDefenseForce Defenses => new FeudalWorldDefenseForce();
 }

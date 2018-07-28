@@ -11,7 +11,7 @@ public class ArmyInfoDisplayer : MonoBehaviour
 
 	public void DisplayArmy(Army army)
 	{
-		ArmyName.text = army.ArmyName;
+		ArmyName.text = army.ArmyName + " (" + army.ArmyType + ")";
 		ArmyLeader.text = army.LeaderName;
 		ArmyStrength.text = army.ArmyStrength;
 

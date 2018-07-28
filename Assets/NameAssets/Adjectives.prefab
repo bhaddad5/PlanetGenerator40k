@@ -22,6 +22,8 @@ GameObject:
   - component: {fileID: 114885965143337576}
   - component: {fileID: 114258613437993694}
   - component: {fileID: 114608436901025856}
+  - component: {fileID: 114791927059573792}
+  - component: {fileID: 114161880127802292}
   m_Layer: 0
   m_Name: Adjectives
   m_TagString: Untagged
@@ -42,6 +44,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114161880127802292
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1772661310737650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60d82449a6f24a44599f39dd7935712f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TableName: ObjectAdjective
+  Names: 'Shining,
+
+    Brilliant,
+
+    Forgotten,
+
+    Radiant,
+
+    Purged,
+
+    Sanctified,
+
+    Holy,
+
+    Unholy,
+
+    Venerable,
+
+    Unearthed'
 --- !u!114 &114258613437993694
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -54,7 +87,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TableName: Numeral
-  Names: I, II,III,IV,V,VI,VII,VIII,IX,X,XI,XII,XIII,XIV,XV,XVI,XVII,XVIII,XIX,XX,XXI,XXII,XXIII,XXIV,XXV
+  Names: I,II,III,IV,V,VI,VII,VIII,IX,X,XI,XII,XIII,XIV,XV,XVI,XVII,XVIII,XIX,XX,XXI,XXII,XXIII,XXIV,XXV
 --- !u!114 &114608436901025856
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -80,6 +113,29 @@ MonoBehaviour:
     Unbreakable,
 
     Ironside'
+--- !u!114 &114791927059573792
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1772661310737650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60d82449a6f24a44599f39dd7935712f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TableName: Metals
+  Names: 'Golden,
+
+    Silver,
+
+    Bronze,
+
+    Brass,
+
+    Iron,
+
+    Steel'
 --- !u!114 &114885965143337576
 MonoBehaviour:
   m_ObjectHideFlags: 1
