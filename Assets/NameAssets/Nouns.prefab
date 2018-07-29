@@ -9,91 +9,103 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1674283437261354}
+  m_RootGameObject: {fileID: 1469782456760696}
   m_IsPrefabAsset: 1
---- !u!1 &1674283437261354
+--- !u!1 &1469782456760696
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4558971285243886}
-  - component: {fileID: 114811673747189016}
-  - component: {fileID: 114582345336654988}
+  - component: {fileID: 4110037270423178}
+  - component: {fileID: 114700886448766980}
+  - component: {fileID: 114457376515893136}
+  - component: {fileID: 114504027271508786}
   m_Layer: 0
-  m_Name: OrganizationNames
+  m_Name: Nouns
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4558971285243886
+--- !u!4 &4110037270423178
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1674283437261354}
+  m_GameObject: {fileID: 1469782456760696}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 10, y: 50, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114582345336654988
+--- !u!114 &114457376515893136
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1674283437261354}
+  m_GameObject: {fileID: 1469782456760696}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 60d82449a6f24a44599f39dd7935712f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TableName: OrganizationGoalTowardsThing
-  Names: 'Sword,
+  TableName: MeleeWeapon
+  Names: 'Knife,
 
-    Defender,
+    Sword,
 
-    Protector,
+    Spear,
 
-    Guardian,
+    Club,
 
-    Reclaimer,
+    Fist,
 
-    Explorator,
+    Axe,
 
-    Oppressor,
-
-    Loyalist'
---- !u!114 &114811673747189016
+    Blade'
+--- !u!114 &114504027271508786
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1674283437261354}
+  m_GameObject: {fileID: 1469782456760696}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 60d82449a6f24a44599f39dd7935712f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TableName: TitanGroupNames
-  Names: 'Dominatus,
+  TableName: RangedWeapon
+  Names: 'Bolter,
 
-    Tranquilius,
+    Stubber,
 
-    Imperius,
+    Lasgun'
+--- !u!114 &114700886448766980
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1469782456760696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60d82449a6f24a44599f39dd7935712f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TableName: Buildings
+  Names: 'Basillica,
 
-    Infernus,
+    Pyramid,
 
-    Mortis,
+    City,
 
-    Astral,
+    Fortress,
 
-    Temporus,
+    Castle,
 
-    Agravides,
+    Palace,
 
-    Annihalatus'
+    Ruins'

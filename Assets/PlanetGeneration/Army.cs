@@ -39,6 +39,7 @@ public class FeudalArmy : Army
 
 public class GangArmy : Army
 {
+	public override string ArmyName => NameBuilder.GetName("GangArmy");
 	public override string ArmyType => "Gang";
 	public override string ArmyStrength => NumberBuilder.GetNumberString(500, 10000) + " gangers";
 	public override bool Hostile => true;
