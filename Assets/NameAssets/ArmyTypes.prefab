@@ -9,33 +9,33 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1612589058884906}
+  m_RootGameObject: {fileID: 1043065801882172}
   m_IsPrefabAsset: 1
---- !u!1 &1612589058884906
+--- !u!1 &1043065801882172
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4100324242721270}
-  - component: {fileID: 114025674893790820}
-  - component: {fileID: 114074651443043628}
-  - component: {fileID: 114636217120784644}
-  - component: {fileID: 114120275321014004}
+  - component: {fileID: 4664022269591026}
+  - component: {fileID: 114328222360200454}
+  - component: {fileID: 114230471337879208}
+  - component: {fileID: 114468125300385942}
+  - component: {fileID: 114090208523722888}
   m_Layer: 0
-  m_Name: EmpireLeaders
+  m_Name: ArmyTypes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4100324242721270
+--- !u!4 &4664022269591026
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1612589058884906}
+  m_GameObject: {fileID: 1043065801882172}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -43,75 +43,101 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114025674893790820
+--- !u!114 &114090208523722888
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1612589058884906}
+  m_GameObject: {fileID: 1043065801882172}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 60d82449a6f24a44599f39dd7935712f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TableName: PlanetRulerName
-  Names: '{EmpireFirstName} {Numeral},
+  TableName: MechanizedArmyTypes
+  Names: '{CommonArmies},
 
-    {PlanetRulerTitle} {EmpireFirstName} {Numeral},
+    {CommonArmies},
 
-    {PlanetRulerTitle} {EmpireFirstName},
+    {CommonArmies},
 
-    {PlanetRulerTitle} {EmpireFirstName} the {RulerAdjective}'
---- !u!114 &114074651443043628
+    {CommonArmies},
+
+    Mechanized Regiment,
+
+    Armor'
+--- !u!114 &114230471337879208
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1612589058884906}
+  m_GameObject: {fileID: 1043065801882172}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 60d82449a6f24a44599f39dd7935712f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TableName: EmpireArmyLeader
-  Names: '{EmpireArmyLeaderTitle} {EmpireFirstName},
+  TableName: InfantryArmyTypes
+  Names: 'Fussiliers,
 
-    {EmpireArmyLeaderTitle} {EmpireFirstName} the {WarLeaderAdjective}'
---- !u!114 &114120275321014004
+    Guard Regiment,
+
+    Planetary Defense Regiment,
+
+    Regiment,
+
+    First Born,
+
+    {CommonArmies},
+
+    {CommonArmies},
+
+    {CommonArmies},
+
+    {CommonArmies},
+
+    Korps'
+--- !u!114 &114328222360200454
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1612589058884906}
+  m_GameObject: {fileID: 1043065801882172}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 60d82449a6f24a44599f39dd7935712f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TableName: GangLeader
-  Names: 'The {Metals} {OrganizationGoalTowardsThing},
+  TableName: CommonArmies
+  Names: 'Legion,
 
-    The {OrganizationGoalTowardsThing},
+    Primary,
 
-    {EmpireFirstName},
+    Army,
 
-    {EmpireFirstName} the {OrganizationGoalTowardsThing},
-
-    {EmpireFirstName} the {ObjectAdjective}{OrganizationGoalTowardsThing},
-
-    {EmpireFirstName} the {Metals}{OrganizationGoalTowardsThing}'
---- !u!114 &114636217120784644
+    Warriors'
+--- !u!114 &114468125300385942
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1612589058884906}
+  m_GameObject: {fileID: 1043065801882172}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 60d82449a6f24a44599f39dd7935712f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TableName: FeudalPlanetRuler
-  Names: '{FeudalTitles} {EmpireFirstName} {Numeral},
+  TableName: ScoutArmyTypes
+  Names: '{CommonArmies},
 
-    {FeudalTitles} {EmpireFirstName}'
+    {CommonArmies},
+
+    {CommonArmies},
+
+    {CommonArmies},
+
+    Scouts,
+
+    Pathfinders,
+
+    Guerillas'

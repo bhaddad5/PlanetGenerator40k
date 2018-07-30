@@ -17,16 +17,16 @@ public class PlanetInfoDisplayer : MonoBehaviour
 
 	public void DisplayPlanet(Planet planet)
 	{
-		PlanetName.text = planet.Name;
-		PlanetTypeName.text = planet.PlanetTypeName;
-		RulerName.text = "Ruler: " + planet.Ruler;
+		PlanetName.text = planet.GetName;
+		PlanetTypeName.text = planet.GetPlanetTypeName;
+		RulerName.text = "Ruler: " + planet.GetRuler;
 
 		foreach (Transform child in ArmyDisplayParent.transform)
 		{
 			GameObject.Destroy(child.gameObject);
 		}
 
-		foreach (Army army in planet.Defenses.PlanetaryArmies())
+		foreach (Army army in planet.GetDefenses.PlanetaryArmies())
 		{
 			var armyDisplay = Instantiate(ArmyInfoDisplayPrefab);
 			armyDisplay.transform.SetParent(ArmyDisplayParent);

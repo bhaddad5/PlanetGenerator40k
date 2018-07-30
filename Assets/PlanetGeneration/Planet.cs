@@ -4,37 +4,38 @@ using UnityEngine;
 
 public abstract class Planet
 {
-	public virtual string Name => NameBuilder.GetName("PlanetName");
-	public virtual string PlanetTypeName => "";
-	public virtual string Ruler => NameBuilder.GetName("PlanetRulerName");
-	public virtual PlanetDefenseForce Defenses => new CivilizedWorldDefenseForce();
+	public virtual string GetName => NameBuilder.GetName("PlanetName");
+	public virtual string GetPlanetTypeName => "";
+	public virtual string GetRuler => NameBuilder.GetName("PlanetRulerName");
+	public virtual PlanetDefenseForce GetDefenses => new CivilizedWorldDefenseForce();
 }
 
 public class AgriPlanet : Planet
 {
-	public override string PlanetTypeName => "Agri World";
+	public override string GetPlanetTypeName => "Agri World";
+	public override PlanetDefenseForce GetDefenses => new AgriWorldDefenseForce();
 }
 
 public class HiveWorld : Planet
 {
-	public override string PlanetTypeName => "Hive World";
-	public override PlanetDefenseForce Defenses => new HiveWorldDefenseForce();
+	public override string GetPlanetTypeName => "Hive World";
+	public override PlanetDefenseForce GetDefenses => new HiveWorldDefenseForce();
 }
 
 public class CivilizedWorld : Planet
 {
-	public override string PlanetTypeName => "Civilized World";
+	public override string GetPlanetTypeName => "Civilized World";
 }
 
 public class FeudalWorld : Planet
 {
-	public override string Ruler => NameBuilder.GetName("FeudalPlanetRuler");
-	public override string PlanetTypeName => "Feudal World";
-	public override PlanetDefenseForce Defenses => new FeudalWorldDefenseForce();
+	public override string GetRuler => NameBuilder.GetName("FeudalPlanetRuler");
+	public override string GetPlanetTypeName => "Feudal World";
+	public override PlanetDefenseForce GetDefenses => new FeudalWorldDefenseForce();
 }
 
 public class ForgeWorld : Planet
 {
-	public override string PlanetTypeName => "Forge World";
-	public override PlanetDefenseForce Defenses => new ForgeWorldDefenseForce();
+	public override string GetPlanetTypeName => "Forge World";
+	public override PlanetDefenseForce GetDefenses => new ForgeWorldDefenseForce();
 }

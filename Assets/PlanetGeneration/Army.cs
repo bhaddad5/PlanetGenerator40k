@@ -13,19 +13,22 @@ public abstract class Army
 
 public class GuardArmy : Army
 {
+	public override string ArmyName => NameBuilder.GetName("GuardArmy");
 	public override string ArmyType => "Imperial Guard";
 	public override string ArmyStrength => NumberBuilder.GetNumberString(10000, 1000000) + " guardsmen";
 }
 
 public class ScoutArmy : Army
 {
-	public override string ArmyType => "Imperial Guard";
+	public override string ArmyName => NameBuilder.GetName("ScoutArmy");
+	public override string ArmyType => "Light Infantry";
 	public override string ArmyStrength => NumberBuilder.GetNumberString(1000, 10000) + " guardsmen";
 }
 
 public class TankArmy : Army
 {
-	public override string ArmyType => "Imperial Guard";
+	public override string ArmyName => NameBuilder.GetName("MechanizedArmy");
+	public override string ArmyType => "Armored Corps";
 	public override string ArmyStrength => NumberBuilder.GetNumberString(500, 10000) + " tanks";
 }
 
@@ -40,15 +43,10 @@ public class FeudalArmy : Army
 public class GangArmy : Army
 {
 	public override string ArmyName => NameBuilder.GetName("GangArmy");
+	public override string LeaderName => NameBuilder.GetName("GangLeader");
 	public override string ArmyType => "Gang";
 	public override string ArmyStrength => NumberBuilder.GetNumberString(500, 10000) + " gangers";
 	public override bool Hostile => true;
-}
-
-public class MechanicusArmy : Army
-{
-	public override string ArmyType => "Mechanicus Army";
-	public override string ArmyStrength => NumberBuilder.GetNumberString(1000, 10000) + " skitarii";
 }
 
 public class TitanArmy : Army

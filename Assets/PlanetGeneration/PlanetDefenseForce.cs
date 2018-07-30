@@ -51,7 +51,6 @@ public class ForgeWorldDefenseForce : PlanetDefenseForce
 	protected override List<Army> ArmyTypes => new List<Army>()
 	{
 		new TitanArmy(),
-		new MechanicusArmy(),
 		new TankArmy(),
 	};
 }
