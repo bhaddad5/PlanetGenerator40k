@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1123322508673426}
+  m_IsPrefabAsset: 1
+--- !u!1 &1123322508673426
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4614359275104180}
+  - component: {fileID: 114505831188212820}
+  m_Layer: 0
+  m_Name: MaterialLookup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4614359275104180
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1123322508673426}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114505831188212820
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1123322508673426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebc5975faf8bb164a9999ad930ac6057, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Arid: {fileID: 2100000, guid: 64ab8835ac25df24da18c8f409f31979, type: 2}
+  Arctic: {fileID: 2100000, guid: f16ca0bbb448d1147ad98623628363e9, type: 2}
+  Continental: {fileID: 2100000, guid: 841865685f1862d41a20844fbafb8135, type: 2}
+  Desert: {fileID: 2100000, guid: a6205b54b9603514e9095f42e93fd5bc, type: 2}
+  Dead: {fileID: 2100000, guid: 834b366ba1382e646b9928c31a44f75e, type: 2}
+  Jungle: {fileID: 2100000, guid: ff6b201a061a9a04fb031b93edb06a22, type: 2}
+  Molten: {fileID: 2100000, guid: 84ccdc3323cf4c94cbb809d4426d6b99, type: 2}

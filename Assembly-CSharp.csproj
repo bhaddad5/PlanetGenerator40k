@@ -60,16 +60,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\External Planet Shader\Demo\Scripts\ColorPicker.cs" />
+    <Compile Include="Assets\External Planet Shader\Demo\Scripts\GradSprite.cs" />
+    <Compile Include="Assets\External Planet Shader\Demo\Scripts\MouseOrbitImproved.cs" />
+    <Compile Include="Assets\External Planet Shader\Demo\Scripts\PlanetManager.cs" />
+    <Compile Include="Assets\External Planet Shader\Demo\Scripts\Rotate.cs" />
+    <Compile Include="Assets\External Planet Shader\scripts\HPlanet.cs" />
     <Compile Include="Assets\NameGenerator\NameBuilder.cs" />
     <Compile Include="Assets\NameGenerator\NameTable.cs" />
     <Compile Include="Assets\NameGenerator\NumberBuilder.cs" />
     <Compile Include="Assets\NameGenerator\TableSpawner.cs" />
     <Compile Include="Assets\PlanetGeneration\Army.cs" />
+    <Compile Include="Assets\PlanetGeneration\Biome.cs" />
     <Compile Include="Assets\PlanetGeneration\Planet.cs" />
+    <Compile Include="Assets\PlanetGeneration\PlanetBiomeOptions.cs" />
     <Compile Include="Assets\PlanetGeneration\PlanetDefenseForce.cs" />
     <Compile Include="Assets\PlanetGeneration\PlanetGenerator.cs" />
     <Compile Include="Assets\PlanetInfoDisplayer\ArmyInfoDisplayer.cs" />
     <Compile Include="Assets\PlanetInfoDisplayer\PlanetInfoDisplayer.cs" />
+    <Compile Include="Assets\PlanetInfoDisplayer\PlanetMaterialLookup.cs" />
+    <Compile Include="Assets\PlanetInfoDisplayer\PlanetVisualDisplayController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -103,10 +113,14 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+    <None Include="Assets\External Planet Shader\Shaders\Planet.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\External Planet Shader\Legacy\Planet.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\External Planet Shader\Shaders\Ring.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\External Planet Shader\Shaders\SpaceSky.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
@@ -114,16 +128,23 @@
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\External Planet Shader\Documentation\Readme.txt" />
+    <None Include="Assets\External Planet Shader\Shaders\Planet Static.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\External Planet Shader\Shaders\Planet Simp.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\External Planet Shader\Shaders\Atmosphere.shader" />
+    <None Include="Assets\External Planet Shader\Textures\Generators\Warning for mobiles.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\External Planet Shader\Shaders\GasGiant.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\External Planet Shader\Shaders\ColorPicker.shader" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/Bert Haddad/40k World Generator/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

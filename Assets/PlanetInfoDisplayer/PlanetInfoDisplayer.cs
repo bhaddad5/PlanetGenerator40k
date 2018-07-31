@@ -8,6 +8,7 @@ public class PlanetInfoDisplayer : MonoBehaviour
 {
 	public ArmyInfoDisplayer ArmyInfoDisplayPrefab;
 	public Transform ArmyDisplayParent;
+	public PlanetVisualDisplayController PlanetVisualizer;
 
 	public TMP_Text PlanetName;
 	public TMP_Text PlanetTypeName;
@@ -17,7 +18,8 @@ public class PlanetInfoDisplayer : MonoBehaviour
 
 	public void DisplayPlanet(Planet planet)
 	{
-		PlanetName.text = planet.GetName;
+		var biome = planet.PlanetBiome.GetPlanetBiome();
+		PlanetName.text = planet.GetName + " (" + biome.Descriptor + ")";
 		PlanetTypeName.text = planet.GetPlanetTypeName;
 		RulerName.text = "Ruler: " + planet.GetRuler;
 
@@ -32,5 +34,7 @@ public class PlanetInfoDisplayer : MonoBehaviour
 			armyDisplay.transform.SetParent(ArmyDisplayParent);
 			armyDisplay.DisplayArmy(army);
 		}
+
+		PlanetVisualizer.SetupBiome(biome);
 	}
 }
