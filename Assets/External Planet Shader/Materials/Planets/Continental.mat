@@ -154,14 +154,14 @@ Material:
     - _Emission: 0
     - _EmissiveCracks: 0
     - _EmissiveLiquid: 0
-    - _Fertility: 0.79
+    - _Fertility: 0.901
     - _Frost: -0.27
-    - _FrostContrast: 0.914
+    - _FrostContrast: 0.841
     - _Gloss: 0.351
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
-    - _Heat: 0.329
+    - _Heat: 0
     - _HeatMultiplier: 0.50489783
     - _Metallic: 0
     - _Mode: 0
@@ -189,8 +189,8 @@ Material:
     - _Sunset: 0
     - _Temperature: -1
     - _UVSec: 0
-    - _VegetationContrast: 0.352
-    - _VegetationFrostResistance: 0.392
+    - _VegetationContrast: 0.366
+    - _VegetationFrostResistance: 0.503
     - _VegetationLowTempResistance: 0
     - _VegetationMultiplier: 1
     - _VegetationSpread: 0.167
@@ -210,5 +210,5 @@ Material:
     - _Mountains: {r: 1, g: 1, b: 1, a: 1}
     - _Planes: {r: 0.4617483, g: 0.5367647, b: 0.118404, a: 1}
     - _Shores: {r: 0.7941176, g: 0.7388676, b: 0.5080017, a: 1}
-    - _Vegetation: {r: 0, g: 0.091, b: 0.014014005, a: 0}
+    - _Vegetation: {r: 0.050551802, g: 0.1509434, b: 0.07066388, a: 0}
     - _VegetationColor: {r: 0, g: 0.383, b: 0.03433783, a: 1}

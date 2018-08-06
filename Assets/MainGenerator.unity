@@ -274,6 +274,186 @@ Prefab:
       propertyPath: DetailsRegular
       value: 
       objectReference: {fileID: 2800000, guid: f3c285f93c3b1b64e912820c79dfa8a5, type: 3}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: AridLightBrown.r
+      value: 0.2735849
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: AridLightBrown.g
+      value: 0.1882353
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: AridLightBrown.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: AridDarkBrown.r
+      value: 0.14150941
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: AridDarkBrown.g
+      value: 0.09793576
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: AridDarkBrown.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: AridMediumBrown.r
+      value: 0.16037738
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: AridMediumBrown.g
+      value: 0.10901873
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: AridMediumBrown.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: DesertYellow.r
+      value: 0.23584908
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: DesertYellow.g
+      value: 0.2303357
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: DesertYellow.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: DesertWhite.r
+      value: 0.29059505
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: DesertWhite.g
+      value: 0.2924528
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: DesertWhite.b
+      value: 0.15588287
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: JungleLightGreen.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: JungleLightGreen.g
+      value: 0.1509434
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: JungleLightGreen.b
+      value: 0.011285027
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: JungleDarkGreen.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: JungleDarkGreen.g
+      value: 0.14150941
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: JungleDarkGreen.b
+      value: 0.0019133089
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: ArcticWhite.r
+      value: 0.9575472
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: ArcticWhite.g
+      value: 0.99671465
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: ArcticWhite.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: ArcticBluishWhite.r
+      value: 0.3003738
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: ArcticBluishWhite.g
+      value: 0.45186454
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: ArcticBluishWhite.b
+      value: 0.4716981
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: PlainsGreenish.r
+      value: 0.15576929
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: PlainsGreenish.g
+      value: 0.31132078
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: PlainsGreenish.b
+      value: 0.08076719
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: PlainsYellowish.r
+      value: 0.2303243
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: PlainsYellowish.g
+      value: 0.2924528
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: PlainsYellowish.b
+      value: 0.09242612
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: AlpineForest.r
+      value: 0.027367385
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: AlpineForest.g
+      value: 0.14150941
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: AlpineForest.b
+      value: 0.03852653
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e10f7ad0d5778f04695a7e270e426b54, type: 2}
   m_IsPrefabAsset: 0

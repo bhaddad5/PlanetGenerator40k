@@ -149,7 +149,7 @@ Material:
     - _EmissiveCracks: 0
     - _EmissiveLiquid: 0
     - _Fertility: 1
-    - _Frost: -5.772379
+    - _Frost: -0.51
     - _FrostContrast: 1
     - _Gloss: 0.253
     - _GlossMapScale: 1
@@ -169,7 +169,7 @@ Material:
     - _PopulationFrostModifier: 0.142
     - _PopulationLandOcean: 0
     - _PopulationShoresMountains: 0.101
-    - _RandomSeed: 370
+    - _RandomSeed: 152
     - _Refraction: 0
     - _Relief: 0.663
     - _Shininess: 0.078125
@@ -188,7 +188,7 @@ Material:
     - _VegetationLowTempResistance: 0
     - _VegetationMultiplier: 0.586
     - _VegetationSpread: 0.167
-    - _WaterLevel: 0.4534433
+    - _WaterLevel: -1
     - _ZWrite: 1
     m_Colors:
     - _AtmosphereColor: {r: 0, g: 0.06266154, b: 0.254717, a: 1}

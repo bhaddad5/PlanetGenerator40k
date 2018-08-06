@@ -33,6 +33,25 @@ public class PlanetAssetLookup : MonoBehaviour
 	[SerializeField] private Texture DetailsFlatter;
 	[SerializeField] private Texture DetailsRegular;
 
+	[Header("Colors")]
+	[SerializeField] private Color AridLightBrown;
+	[SerializeField] private Color AridDarkBrown;
+	[SerializeField] private Color AridMediumBrown;
+
+	[SerializeField] private Color DesertYellow;
+	[SerializeField] private Color DesertWhite;
+
+	[SerializeField] private Color JungleLightGreen;
+	[SerializeField] private Color JungleDarkGreen;
+
+	[SerializeField] private Color ArcticWhite;
+	[SerializeField] private Color ArcticBluishWhite;
+
+	[SerializeField] private Color PlainsGreenish;
+	[SerializeField] private Color PlainsYellowish;
+
+	[SerializeField] private Color AlpineForest;
+
 	private float fullFrost = .34f;
 	private float normalFrost = .112f;
 
@@ -45,10 +64,11 @@ public class PlanetAssetLookup : MonoBehaviour
 		if (biome is Arid)
 			return new BiomeDisplayInfo()
 			{
-				Heights = oneof(HeightsCraters, HeightsSpiral, HeightsHigher),
+				Heights = oneof(HeightsCraters, HeightsHigher),
 				Details = details,
 				FrostLevel = Random.Range(0, normalFrost),
-				WaterLevel = Random.Range(noWater, noWater + .075f)
+				WaterLevel = Random.Range(noWater, noWater + .075f),
+				VegitationColor = oneof(AridLightBrown, AridDarkBrown, AridMediumBrown)
 			};
 		if (biome is Jungle)
 			return new BiomeDisplayInfo()
@@ -56,15 +76,17 @@ public class PlanetAssetLookup : MonoBehaviour
 				Heights = oneof(HeightsRegular, HeightsContinental),
 				Details = details,
 				FrostLevel = Random.Range(0, normalFrost),
-				WaterLevel = Random.Range(regularWater-.05f, regularWater + .05f)
+				WaterLevel = Random.Range(regularWater-.05f, regularWater + .05f),
+				VegitationColor = oneof(JungleDarkGreen, JungleLightGreen)
 			};
 		if (biome is Arctic)
 			return new BiomeDisplayInfo()
 			{
-				Heights = oneof(HeightsRegular, HeightsSpiral, HeightsCraters),
+				Heights = oneof(HeightsRegular, HeightsCraters),
 				Details = details,
 				FrostLevel = Random.Range(fullFrost - .12f, fullFrost),
 				WaterLevel = Random.Range(regularWater - .05f, regularWater + .05f),
+				VegitationColor = oneof(ArcticWhite, ArcticBluishWhite)
 			};
 		if (biome is Desert)
 			return new BiomeDisplayInfo()
@@ -72,7 +94,8 @@ public class PlanetAssetLookup : MonoBehaviour
 				Heights = oneof(HeightsRegular, HeightsContinental),
 				Details = details,
 				FrostLevel = Random.Range(0, normalFrost),
-				WaterLevel = Random.Range(noWater, noWater + .045f)
+				WaterLevel = Random.Range(noWater, noWater + .045f),
+				VegitationColor = oneof(AridLightBrown, DesertYellow, DesertWhite)
 			};
 		if (biome is Continental)
 			return new BiomeDisplayInfo()
@@ -81,6 +104,7 @@ public class PlanetAssetLookup : MonoBehaviour
 				Details = details,
 				FrostLevel = Random.Range(normalFrost-.05f, normalFrost+.05f),
 				WaterLevel = Random.Range(regularWater - .05f, regularWater + .05f),
+				VegitationColor = oneof(PlainsGreenish, PlainsYellowish, JungleLightGreen)
 			};
 		if (biome is Alpine)
 			return new BiomeDisplayInfo()
@@ -89,6 +113,7 @@ public class PlanetAssetLookup : MonoBehaviour
 				Details = details,
 				FrostLevel = Random.Range(fullFrost - .2f, fullFrost - .12f),
 				WaterLevel = Random.Range(regularWater - .05f, regularWater + .05f),
+				VegitationColor = oneof(AlpineForest)
 			};
 		if (biome is Molten)
 			return new BiomeDisplayInfo()
@@ -99,7 +124,7 @@ public class PlanetAssetLookup : MonoBehaviour
 		if (biome is Dead)
 			return new BiomeDisplayInfo()
 			{
-				Heights = oneof(HeightsSpiral, HeightsCraters),
+				Heights = oneof(HeightsCraters),
 				Details = details,
 			};
 
