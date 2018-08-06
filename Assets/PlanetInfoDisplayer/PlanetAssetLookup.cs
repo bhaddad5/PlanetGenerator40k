@@ -58,6 +58,8 @@ public class PlanetAssetLookup : MonoBehaviour
 	[SerializeField] private Color MoltonAshDark;
 	[SerializeField] private Color MoltonAshLight;
 
+	[SerializeField] private Color DeadGray;
+
 	[Header("Water Colors")]
 	[SerializeField] private Color LightBlueWater;
 	[SerializeField] private Color DarkBlueWater;
@@ -141,6 +143,9 @@ public class PlanetAssetLookup : MonoBehaviour
 		}
 		if (biome is Dead)
 		{
+			defaultInfo.Heights = oneof(HeightsRegular, HeightsCraters, HeightsCraters, HeightsCraters, HeightsHigher);
+			defaultInfo.FrostLevel = Random.Range(0, fullFrost - .22f);
+			defaultInfo.VegitationColor = oneof(MoltonAshDark, MoltonAshLight, ArcticWhite, DeadGray);
 			defaultInfo.WaterLevel = 0;
 		}
 
