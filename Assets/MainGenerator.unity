@@ -454,6 +454,96 @@ Prefab:
       propertyPath: AlpineForest.b
       value: 0.03852653
       objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: LightBlueWater.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: LightBlueWater.g
+      value: 0.031863157
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: LightBlueWater.b
+      value: 0.38679248
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: DarkBlueWater.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: DarkBlueWater.g
+      value: 0.01952633
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: DarkBlueWater.b
+      value: 0.103773594
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: LightLava.r
+      value: 0.6886792
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: LightLava.g
+      value: 0.14709653
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: LightLava.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: DarkLava.r
+      value: 0.3301887
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: DarkLava.g
+      value: 0.004672473
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: DarkLava.b
+      value: 0.004672473
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: LightAtmosphere.r
+      value: 0.50534
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: LightAtmosphere.g
+      value: 0.61160165
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: LightAtmosphere.b
+      value: 0.6415094
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: LavaAtmosphere.r
+      value: 0.6037736
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: LavaAtmosphere.g
+      value: 0.11853222
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: LavaAtmosphere.b
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e10f7ad0d5778f04695a7e270e426b54, type: 2}
   m_IsPrefabAsset: 0
@@ -1018,6 +1108,21 @@ Prefab:
       propertyPath: _PlanetMaterial
       value: 
       objectReference: {fileID: 2100000, guid: 1af7a68c5f46a02428b0262fdce3f871, type: 2}
+    - target: {fileID: 114827110161523000, guid: 5188d0052a0a2f340a1ddbf595ff4bb7,
+        type: 2}
+      propertyPath: _AtmosphereColor.r
+      value: 0.370283
+      objectReference: {fileID: 0}
+    - target: {fileID: 114827110161523000, guid: 5188d0052a0a2f340a1ddbf595ff4bb7,
+        type: 2}
+      propertyPath: _AtmosphereColor.g
+      value: 0.3868241
+      objectReference: {fileID: 0}
+    - target: {fileID: 114827110161523000, guid: 5188d0052a0a2f340a1ddbf595ff4bb7,
+        type: 2}
+      propertyPath: _AtmosphereColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5188d0052a0a2f340a1ddbf595ff4bb7, type: 2}
   m_IsPrefabAsset: 0
@@ -1401,7 +1506,7 @@ Material:
     - _Rim: 0
     - _Size: 0.195
     m_Colors:
-    - _Color: {r: 0.22491, g: 0.459, b: 0.459, a: 1}
+    - _Color: {r: 0.370283, g: 0.3868241, b: 0.5, a: 1}
 --- !u!28 &1922652148
 Texture2D:
   m_ObjectHideFlags: 0

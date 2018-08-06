@@ -11,6 +11,9 @@ public class BiomeDisplayInfo
 	public float FrostLevel;
 	public float WaterLevel;
 	public Color VegitationColor;
+	public Color WaterColor;
+	public Color AtmosphereColor;
+	public bool EmissiveWater;
 }
 
 [Serializable]
@@ -33,7 +36,7 @@ public class PlanetAssetLookup : MonoBehaviour
 	[SerializeField] private Texture DetailsFlatter;
 	[SerializeField] private Texture DetailsRegular;
 
-	[Header("Colors")]
+	[Header("Vegitation Colors")]
 	[SerializeField] private Color AridLightBrown;
 	[SerializeField] private Color AridDarkBrown;
 	[SerializeField] private Color AridMediumBrown;
@@ -52,6 +55,21 @@ public class PlanetAssetLookup : MonoBehaviour
 
 	[SerializeField] private Color AlpineForest;
 
+	[SerializeField] private Color MoltonAshDark;
+	[SerializeField] private Color MoltonAshLight;
+
+	[Header("Water Colors")]
+	[SerializeField] private Color LightBlueWater;
+	[SerializeField] private Color DarkBlueWater;
+
+	[SerializeField] private Color LightLava;
+	[SerializeField] private Color DarkLava;
+
+	[Header("Atmosphere Colors")]
+	[SerializeField] private Color LightAtmosphere;
+
+	[SerializeField] private Color LavaAtmosphere;
+
 	private float fullFrost = .34f;
 	private float normalFrost = .112f;
 
@@ -60,79 +78,73 @@ public class PlanetAssetLookup : MonoBehaviour
 
 	public BiomeDisplayInfo GetBiomeDisplayInfo(Biome biome)
 	{
-		Texture details = oneof(DetailsFlatter, DetailsRegular);
-		if (biome is Arid)
-			return new BiomeDisplayInfo()
-			{
-				Heights = oneof(HeightsCraters, HeightsHigher),
-				Details = details,
-				FrostLevel = Random.Range(0, normalFrost),
-				WaterLevel = Random.Range(noWater, noWater + .075f),
-				VegitationColor = oneof(AridLightBrown, AridDarkBrown, AridMediumBrown)
-			};
-		if (biome is Jungle)
-			return new BiomeDisplayInfo()
-			{
-				Heights = oneof(HeightsRegular, HeightsContinental),
-				Details = details,
-				FrostLevel = Random.Range(0, normalFrost),
-				WaterLevel = Random.Range(regularWater-.05f, regularWater + .05f),
-				VegitationColor = oneof(JungleDarkGreen, JungleLightGreen)
-			};
-		if (biome is Arctic)
-			return new BiomeDisplayInfo()
-			{
-				Heights = oneof(HeightsRegular, HeightsCraters),
-				Details = details,
-				FrostLevel = Random.Range(fullFrost - .12f, fullFrost),
-				WaterLevel = Random.Range(regularWater - .05f, regularWater + .05f),
-				VegitationColor = oneof(ArcticWhite, ArcticBluishWhite)
-			};
-		if (biome is Desert)
-			return new BiomeDisplayInfo()
-			{
-				Heights = oneof(HeightsRegular, HeightsContinental),
-				Details = details,
-				FrostLevel = Random.Range(0, normalFrost),
-				WaterLevel = Random.Range(noWater, noWater + .045f),
-				VegitationColor = oneof(AridLightBrown, DesertYellow, DesertWhite)
-			};
-		if (biome is Continental)
-			return new BiomeDisplayInfo()
-			{
-				Heights = oneof(HeightsRegular, HeightsContinental),
-				Details = details,
-				FrostLevel = Random.Range(normalFrost-.05f, normalFrost+.05f),
-				WaterLevel = Random.Range(regularWater - .05f, regularWater + .05f),
-				VegitationColor = oneof(PlainsGreenish, PlainsYellowish, JungleLightGreen)
-			};
-		if (biome is Alpine)
-			return new BiomeDisplayInfo()
-			{
-				Heights = oneof(HeightsRegular, HeightsContinental),
-				Details = details,
-				FrostLevel = Random.Range(fullFrost - .2f, fullFrost - .12f),
-				WaterLevel = Random.Range(regularWater - .05f, regularWater + .05f),
-				VegitationColor = oneof(AlpineForest)
-			};
-		if (biome is Molten)
-			return new BiomeDisplayInfo()
-			{
-				Heights = oneof(HeightsRegular, HeightsContinental),
-				Details = details,
-			};
-		if (biome is Dead)
-			return new BiomeDisplayInfo()
-			{
-				Heights = oneof(HeightsCraters),
-				Details = details,
-			};
-
-		return new BiomeDisplayInfo()
+		var defaultInfo = new BiomeDisplayInfo()
 		{
-			Heights = oneof(HeightsRegular, HeightsContinental),
-			Details = details,
+			Details = oneof(DetailsFlatter, DetailsRegular),
+			WaterColor = oneof(LightBlueWater, DarkBlueWater),
+			AtmosphereColor = LightAtmosphere,
+			EmissiveWater = false,
 		};
+
+
+		if (biome is Arid)
+		{
+			defaultInfo.Heights = oneof(HeightsRegular, HeightsHigher);
+			defaultInfo.FrostLevel = Random.Range(0, normalFrost);
+			defaultInfo.WaterLevel = Random.Range(noWater, noWater + .075f);
+			defaultInfo.VegitationColor = oneof(AridLightBrown, AridDarkBrown, AridMediumBrown);
+		}
+		if (biome is Jungle)
+		{
+			defaultInfo.Heights = oneof(HeightsRegular, HeightsContinental);
+			defaultInfo.FrostLevel = Random.Range(0, normalFrost);
+			defaultInfo.WaterLevel = Random.Range(regularWater - .05f, regularWater + .05f);
+			defaultInfo.VegitationColor = oneof(JungleDarkGreen, JungleLightGreen);
+		}
+		if (biome is Arctic)
+		{
+			defaultInfo.Heights = oneof(HeightsRegular, HeightsCraters);
+			defaultInfo.FrostLevel = Random.Range(fullFrost - .12f, fullFrost);
+			defaultInfo.WaterLevel = Random.Range(regularWater - .05f, regularWater + .05f);
+			defaultInfo.VegitationColor = oneof(ArcticWhite, ArcticBluishWhite);
+		}
+		if (biome is Desert)
+		{
+			defaultInfo.Heights = oneof(HeightsRegular, HeightsContinental);
+			defaultInfo.FrostLevel = Random.Range(0, normalFrost);
+			defaultInfo.WaterLevel = Random.Range(noWater, noWater + .045f);
+			defaultInfo.VegitationColor = oneof(AridLightBrown, DesertYellow, DesertWhite);
+		}
+		if (biome is Continental)
+		{
+			defaultInfo.Heights = oneof(HeightsRegular, HeightsContinental);
+			defaultInfo.FrostLevel = Random.Range(normalFrost - .05f, normalFrost + .05f);
+			defaultInfo.WaterLevel = Random.Range(regularWater - .05f, regularWater + .05f);
+			defaultInfo.VegitationColor = oneof(PlainsGreenish, PlainsYellowish, JungleLightGreen);
+		}
+		if (biome is Alpine)
+		{
+			defaultInfo.Heights = oneof(HeightsRegular, HeightsContinental);
+			defaultInfo.FrostLevel = Random.Range(fullFrost - .2f, fullFrost - .12f);
+			defaultInfo.WaterLevel = Random.Range(regularWater - .05f, regularWater + .05f);
+			defaultInfo.VegitationColor = oneof(AlpineForest);
+		}
+		if (biome is Molten)
+		{
+			defaultInfo.Heights = oneof(HeightsRegular, HeightsContinental);
+			defaultInfo.FrostLevel = 0;
+			defaultInfo.WaterLevel = Random.Range(regularWater - .05f, regularWater + .05f);
+			defaultInfo.VegitationColor = oneof(MoltonAshDark, MoltonAshLight);
+			defaultInfo.WaterColor = oneof(LightLava, DarkLava);
+			defaultInfo.AtmosphereColor = LavaAtmosphere;
+			defaultInfo.EmissiveWater = true;
+		}
+		if (biome is Dead)
+		{
+			defaultInfo.WaterLevel = 0;
+		}
+
+		return defaultInfo;
 	}
 
 	private T oneof<T>(params T[] options)

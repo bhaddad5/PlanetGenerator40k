@@ -18,9 +18,11 @@ public class PlanetVisualDisplayController : MonoBehaviour
 		planet.Frost = displayInfo.FrostLevel;
 		planet.VegetationColor = displayInfo.VegitationColor;
 		planet.WaterLevel = displayInfo.WaterLevel;
+		planet.AtmosphereColor = displayInfo.AtmosphereColor;
+		planet.LiquidColor = displayInfo.WaterColor;
+		planet.EmissiveWater = displayInfo.EmissiveWater;
 
 		GetComponent<HPlanet>().RandomSeed = Random.Range(0, 1000);
-		//GetComponent<HPlanet>().MakeUnique();
 		GetComponent<HPlanet>().UpdateDetailsGradientMap();
 		GetComponent<HPlanet>().UpdateHeightGradientMap();
 	}

@@ -4,7 +4,7 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Lava
   m_Shader: {fileID: 4800000, guid: 9809683c78abc3b4d840627b3b8abcdb, type: 3}
@@ -188,7 +188,7 @@ Material:
     - _VegetationLowTempResistance: 0
     - _VegetationMultiplier: 1.053
     - _VegetationSpread: 0.167
-    - _WaterLevel: 0.059999943
+    - _WaterLevel: 0.079
     - _ZWrite: 1
     m_Colors:
     - _AtmosphereColor: {r: 1, g: 0.42145854, b: 0.37800002, a: 0}
