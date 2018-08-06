@@ -175,7 +175,7 @@ Material:
     - _PopulationFrostModifier: 0.419
     - _PopulationLandOcean: 0
     - _PopulationShoresMountains: 0
-    - _RandomSeed: 133
+    - _RandomSeed: 439
     - _Refraction: 0
     - _Relief: 0.258
     - _Shininess: 0.078125

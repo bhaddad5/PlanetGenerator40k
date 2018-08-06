@@ -214,6 +214,66 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: HeightsSpiral.Heights
+      value: 
+      objectReference: {fileID: 2800000, guid: e1d5760e392fb8c4b85e2d76dc191f3d, type: 3}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: HeightsSpiral.HeightsNormal
+      value: 
+      objectReference: {fileID: 2800000, guid: 44f923ec148353e4894a5151fda04697, type: 3}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: HeightsRegular.Heights
+      value: 
+      objectReference: {fileID: 2800000, guid: b1fd50eb6e88231458eaffc1a50c6dff, type: 3}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: HeightsRegular.HeightsNormal
+      value: 
+      objectReference: {fileID: 2800000, guid: c4977103604bb0f4c8b1888601ad7099, type: 3}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: HeightsContinental.Heights
+      value: 
+      objectReference: {fileID: 2800000, guid: 710d0a0567d839e4bbb807618632abd8, type: 3}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: HeightsContinental.HeightsNormal
+      value: 
+      objectReference: {fileID: 2800000, guid: ed8c64dce9fcf2c41ab4d3af06a89205, type: 3}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: HeightsCraters.Heights
+      value: 
+      objectReference: {fileID: 2800000, guid: fc7723474b896794e981856dfbce1e4a, type: 3}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: HeightsCraters.HeightsNormal
+      value: 
+      objectReference: {fileID: 2800000, guid: 9e0e2a39848744b47a7881ab98370539, type: 3}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: HeightsHigher.Heights
+      value: 
+      objectReference: {fileID: 2800000, guid: 89840a926dd1bf94d8667aa16530eb4a, type: 3}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: HeightsHigher.HeightsNormal
+      value: 
+      objectReference: {fileID: 2800000, guid: e1eac731dbbafbe40ab19b38d9ac86d9, type: 3}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: DetailsFlatter
+      value: 
+      objectReference: {fileID: 2800000, guid: 47805e76a94cbbc469734f603d6b96a7, type: 3}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: DetailsRegular
+      value: 
+      objectReference: {fileID: 2800000, guid: f3c285f93c3b1b64e912820c79dfa8a5, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e10f7ad0d5778f04695a7e270e426b54, type: 2}
   m_IsPrefabAsset: 0
@@ -322,33 +382,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &196045473
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Human Unit/Atmosphere
-  m_Shader: {fileID: 4800000, guid: 6eff789cfacc0b94b837d06c8a3c9323, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs: []
-    m_Floats:
-    - _Border: 0.1828066
-    - _Brightness: 0.19
-    - _Density: 1
-    - _Refraction: 0.505
-    - _Rim: 0
-    - _Size: 0.195
-    m_Colors:
-    - _Color: {r: 0.22491, g: 0.459, b: 0.459, a: 1}
 --- !u!114 &496937887 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114618781562345052, guid: 1c9588017c2b0f5468104bdc57f13575,
@@ -779,7 +812,7 @@ Prefab:
         type: 2}
       propertyPath: _AtmosphereMaterial
       value: 
-      objectReference: {fileID: 196045473}
+      objectReference: {fileID: 1908384402}
     - target: {fileID: 114827110161523000, guid: 5188d0052a0a2f340a1ddbf595ff4bb7,
         type: 2}
       propertyPath: _HeightGradientMap
@@ -794,7 +827,17 @@ Prefab:
         type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 196045473}
+      objectReference: {fileID: 1908384402}
+    - target: {fileID: 23972333237415110, guid: 5188d0052a0a2f340a1ddbf595ff4bb7,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1af7a68c5f46a02428b0262fdce3f871, type: 2}
+    - target: {fileID: 114827110161523000, guid: 5188d0052a0a2f340a1ddbf595ff4bb7,
+        type: 2}
+      propertyPath: _PlanetMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 1af7a68c5f46a02428b0262fdce3f871, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5188d0052a0a2f340a1ddbf595ff4bb7, type: 2}
   m_IsPrefabAsset: 0
@@ -1152,6 +1195,33 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1892588360}
   m_CullTransparentMesh: 0
+--- !u!21 &1908384402
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Human Unit/Atmosphere
+  m_Shader: {fileID: 4800000, guid: 6eff789cfacc0b94b837d06c8a3c9323, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats:
+    - _Border: 0.1828066
+    - _Brightness: 0.19
+    - _Density: 1
+    - _Refraction: 0.505
+    - _Rim: 0
+    - _Size: 0.195
+    m_Colors:
+    - _Color: {r: 0.22491, g: 0.459, b: 0.459, a: 1}
 --- !u!28 &1922652148
 Texture2D:
   m_ObjectHideFlags: 0

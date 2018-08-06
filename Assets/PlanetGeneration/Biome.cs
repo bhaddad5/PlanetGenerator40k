@@ -41,3 +41,8 @@ public class Molten : Biome
 {
 	public override string Descriptor => "Molten";
 }
+
+public class Alpine : Biome
+{
+	public override string Descriptor => "Alpine";
+}

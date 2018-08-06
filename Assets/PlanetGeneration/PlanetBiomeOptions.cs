@@ -27,6 +27,7 @@ public class CivilizedWorldBiomeOptions : PlanetBiomeOptions
 		new Continental(),
 		new Arid(),
 		new Jungle(),
+		new Alpine(),
 	};
 }
 
@@ -39,6 +40,7 @@ public class HiveWorldBiomeOptions : PlanetBiomeOptions
 		new Jungle(),
 		new Desert(),
 		new Arctic(),
+		new Alpine(),
 	};
 }
 
@@ -57,5 +59,6 @@ public class FeudaleWorldBiomeOptions : PlanetBiomeOptions
 	protected override List<Biome> BiomeOptions => new List<Biome>()
 	{
 		new Continental(),
+		new Alpine(),
 	};
 }

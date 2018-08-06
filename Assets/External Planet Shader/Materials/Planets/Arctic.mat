@@ -19,8 +19,8 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _AdditionalDetails:
-        m_Texture: {fileID: 2800000, guid: fc78ac7ec9d2e62419779212e7e1cc57, type: 3}
-        m_Scale: {x: 1.2, y: 1.2}
+        m_Texture: {fileID: 2800000, guid: f3c285f93c3b1b64e912820c79dfa8a5, type: 3}
+        m_Scale: {x: 1.204, y: 1.204}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
@@ -28,7 +28,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _Cities:
         m_Texture: {fileID: 2800000, guid: a7e1c9f4b6d143b41bc99d303d55d1dd, type: 3}
-        m_Scale: {x: 1, y: 1}
+        m_Scale: {x: 2.476, y: 2.476}
         m_Offset: {x: 0, y: 0}
     - _City:
         m_Texture: {fileID: 2800000, guid: a7e1c9f4b6d143b41bc99d303d55d1dd, type: 3}
@@ -76,14 +76,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _FertilityMap:
         m_Texture: {fileID: 2800000, guid: 28c7aad1372ff114b90d330f8a2dd938, type: 3}
-        m_Scale: {x: 1.022, y: 1.022}
+        m_Scale: {x: 1.552, y: 1.552}
         m_Offset: {x: 0, y: 0}
     - _Gradient:
         m_Texture: {fileID: 2800000, guid: 3f18a298a4a0c4e448b8b43da967c82b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Height:
-        m_Texture: {fileID: 2800000, guid: e1d5760e392fb8c4b85e2d76dc191f3d, type: 3}
+        m_Texture: {fileID: 2800000, guid: 89840a926dd1bf94d8667aa16530eb4a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _HeightGradient:
@@ -103,7 +103,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Normal:
-        m_Texture: {fileID: 2800000, guid: 44f923ec148353e4894a5151fda04697, type: 3}
+        m_Texture: {fileID: 2800000, guid: e1eac731dbbafbe40ab19b38d9ac86d9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
@@ -131,7 +131,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Ambient: 0
+    - _Ambient: 0.54
     - _Atmosphere: 1
     - _BumpScale: 1
     - _CloudsAmount: 0.833
@@ -148,51 +148,51 @@ Material:
     - _Emission: 0
     - _EmissiveCracks: 0
     - _EmissiveLiquid: 0
-    - _Fertility: 0.794
-    - _Frost: 3
-    - _FrostContrast: 0.736
+    - _Fertility: 1
+    - _Frost: -0.008069969
+    - _FrostContrast: 1
     - _Gloss: 0.253
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
-    - _Heat: 0
+    - _Heat: 0.251
     - _HeatMultiplier: 0.953
     - _Metallic: 0
     - _Mode: 0
-    - _NoVegetationMultiplier: 0.16
+    - _NoVegetationMultiplier: 0.302
     - _NormalIntencity: 1
     - _OcclusionStrength: 1
     - _OceanOpacity: 1
     - _Parallax: 0.02
     - _PolesContrast: 0.555
-    - _Population: 0.529
+    - _Population: 1
     - _PopulationFrostModifier: 0.142
     - _PopulationLandOcean: 0
-    - _PopulationShoresMountains: 0
-    - _RandomSeed: 1000
+    - _PopulationShoresMountains: 0.101
+    - _RandomSeed: 248
     - _Refraction: 0
     - _Relief: 0.35885143
     - _Shininess: 0.078125
     - _ShoresContrast: 1
     - _SimpleGradientColor: 0
-    - _Size: 0.389
+    - _Size: 0.727
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
-    - _Specularity: 0.303
+    - _Specularity: 0.655
     - _SrcBlend: 1
     - _Sunset: 0
     - _Temperature: -1
     - _UVSec: 0
-    - _VegetationContrast: 0.3525
-    - _VegetationFrostResistance: 0.128
+    - _VegetationContrast: 0.5
+    - _VegetationFrostResistance: 0.578
     - _VegetationLowTempResistance: 0
-    - _VegetationMultiplier: 1
+    - _VegetationMultiplier: 0.586
     - _VegetationSpread: 0.167
-    - _WaterLevel: -1
+    - _WaterLevel: 0.39999998
     - _ZWrite: 1
     m_Colors:
-    - _AtmosphereColor: {r: 0, g: 0.02094713, b: 0.93380207, a: 1}
-    - _CitiesColor: {r: 0.8141194, g: 0.7634725, b: 0.36691022, a: 1}
+    - _AtmosphereColor: {r: 0.22491, g: 0.459, b: 0.459, a: 1}
+    - _CitiesColor: {r: 1, g: 0.88596493, b: 0, a: 1}
     - _CityColor: {r: 1, g: 0.8600406, b: 0.4926471, a: 1}
     - _CityesColoe: {r: 2.1996303, g: 1.6420239, b: 0.7412754, a: 1}
     - _CloudsColor: {r: 1, g: 1, b: 1, a: 1}
@@ -202,5 +202,5 @@ Material:
     - _Mountains: {r: 1, g: 1, b: 1, a: 1}
     - _Planes: {r: 0.4617483, g: 0.5367647, b: 0.118404, a: 1}
     - _Shores: {r: 0.7941176, g: 0.7388676, b: 0.5080017, a: 1}
-    - _Vegetation: {r: 0, g: 0.097, b: 0.014938004, a: 0}
+    - _Vegetation: {r: 0.018422928, g: 0.16981131, b: 0.04239275, a: 1}
     - _VegetationColor: {r: 0, g: 0.383, b: 0.03433783, a: 1}
