@@ -12,6 +12,7 @@ public class PlanetInfoDisplayer : MonoBehaviour
 
 	public TMP_Text PlanetName;
 	public TMP_Text PlanetTypeName;
+	public TMP_Text PlanetPopulation;
 	public TMP_Text RulerName;
 
 	public PlanetGenerator planetGen;
@@ -21,6 +22,7 @@ public class PlanetInfoDisplayer : MonoBehaviour
 		var biome = planet.PlanetBiome.GetPlanetBiome();
 		PlanetName.text = planet.GetName + " (" + biome.Descriptor + ")";
 		PlanetTypeName.text = planet.GetPlanetTypeName;
+		PlanetPopulation.text = "Population: " + planet.Population;
 		RulerName.text = "Ruler: " + planet.GetRuler;
 
 		foreach (Transform child in ArmyDisplayParent.transform)

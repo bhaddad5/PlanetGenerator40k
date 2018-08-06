@@ -669,7 +669,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &496937887 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114618781562345052, guid: 1c9588017c2b0f5468104bdc57f13575,
+  m_CorrespondingSourceObject: {fileID: 114753554353148898, guid: 1c9588017c2b0f5468104bdc57f13575,
     type: 2}
   m_PrefabInternal: {fileID: 941092363}
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -853,6 +853,26 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114753554353148898, guid: 1c9588017c2b0f5468104bdc57f13575,
+        type: 2}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114753554353148898, guid: 1c9588017c2b0f5468104bdc57f13575,
+        type: 2}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114150393998092634, guid: 1c9588017c2b0f5468104bdc57f13575,
+        type: 2}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114150393998092634, guid: 1c9588017c2b0f5468104bdc57f13575,
+        type: 2}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 114551103308890732, guid: 1c9588017c2b0f5468104bdc57f13575,
         type: 2}
       propertyPath: m_havePropertiesChanged
@@ -866,19 +886,9 @@ Prefab:
     - target: {fileID: 114278465072806964, guid: 1c9588017c2b0f5468104bdc57f13575,
         type: 2}
       propertyPath: m_havePropertiesChanged
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114278465072806964, guid: 1c9588017c2b0f5468104bdc57f13575,
-        type: 2}
-      propertyPath: m_isInputParsingRequired
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114150393998092634, guid: 1c9588017c2b0f5468104bdc57f13575,
-        type: 2}
-      propertyPath: m_havePropertiesChanged
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114150393998092634, guid: 1c9588017c2b0f5468104bdc57f13575,
+    - target: {fileID: 114278465072806964, guid: 1c9588017c2b0f5468104bdc57f13575,
         type: 2}
       propertyPath: m_isInputParsingRequired
       value: 1
@@ -892,36 +902,6 @@ Prefab:
         type: 2}
       propertyPath: m_isInputParsingRequired
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114952414692252170, guid: 1c9588017c2b0f5468104bdc57f13575,
-        type: 2}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114952414692252170, guid: 1c9588017c2b0f5468104bdc57f13575,
-        type: 2}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114952414692252170, guid: 1c9588017c2b0f5468104bdc57f13575,
-        type: 2}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224184757324278462, guid: 1c9588017c2b0f5468104bdc57f13575,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 224184757324278462, guid: 1c9588017c2b0f5468104bdc57f13575,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 255
-      objectReference: {fileID: 0}
-    - target: {fileID: 114278465072806964, guid: 1c9588017c2b0f5468104bdc57f13575,
-        type: 2}
-      propertyPath: m_enableWordWrapping
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c9588017c2b0f5468104bdc57f13575, type: 2}
@@ -1147,6 +1127,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1224356733}
   m_Script: {fileID: 11500000, guid: 6a5ea643110a7f64bbace40fb71e3ae0, type: 3}
+--- !u!114 &1299774141 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114618781562345052, guid: 1c9588017c2b0f5468104bdc57f13575,
+    type: 2}
+  m_PrefabInternal: {fileID: 941092363}
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
 --- !u!224 &1346632172 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 224252183333680964, guid: 1c9588017c2b0f5468104bdc57f13575,
@@ -1296,6 +1282,7 @@ MonoBehaviour:
   PlanetVisualizer: {fileID: 1224356734}
   PlanetName: {fileID: 2055814285}
   PlanetTypeName: {fileID: 496937887}
+  PlanetPopulation: {fileID: 1299774141}
   RulerName: {fileID: 831863093}
   planetGen: {fileID: 1882881217}
 --- !u!1 &1882881216

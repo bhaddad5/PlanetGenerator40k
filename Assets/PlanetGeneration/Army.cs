@@ -6,7 +6,6 @@ public abstract class Army
 {
 	public virtual string ArmyType => "";
 	public virtual string ArmyName => NameBuilder.GetName("GuardArmy");
-	public virtual string LeaderName => NameBuilder.GetName("EmpireArmyLeader");
 	public virtual string ArmyStrength => "";
 	public virtual bool Hostile => false;
 }
@@ -35,7 +34,6 @@ public class TankArmy : Army
 public class FeudalArmy : Army
 {
 	public override string ArmyName => NameBuilder.GetName("FeudalArmy");
-	public override string LeaderName => NameBuilder.GetName("FeudalPlanetRuler");
 	public override string ArmyType => "Feudal Levies";
 	public override string ArmyStrength => NumberBuilder.GetNumberString(10000, 100000) + " men-at-arms";
 }
@@ -43,7 +41,6 @@ public class FeudalArmy : Army
 public class GangArmy : Army
 {
 	public override string ArmyName => NameBuilder.GetName("GangArmy");
-	public override string LeaderName => NameBuilder.GetName("GangLeader");
 	public override string ArmyType => "Gang";
 	public override string ArmyStrength => NumberBuilder.GetNumberString(500, 10000) + " gangers";
 	public override bool Hostile => true;

@@ -1,12 +1,13 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+using Random = System.Random;
 
 public static class NumberBuilder
 {
-	public static string GetNumberString(int min, int max)
+	public static string GetNumberString(long min, long max)
 	{
-		int number = Random.Range(min, max + 1);
+		long number = LongRandom(min, max + 1, new Random(UnityEngine.Random.Range(0, 1000)));
 		int numDigits = number.ToString().Length;
 
 		if (numDigits <= 3)
@@ -20,5 +21,14 @@ public static class NumberBuilder
 		else if (numDigits <= 15)
 			return (number / 1000000000000).ToString() + " trillion";
 		else return number.ToString();
+	}
+
+	private static long LongRandom(long min, long max, Random rand)
+	{
+		byte[] buf = new byte[8];
+		rand.NextBytes(buf);
+		long longRand = BitConverter.ToInt64(buf, 0);
+
+		return (Math.Abs(longRand % (max - min)) + min);
 	}
 }

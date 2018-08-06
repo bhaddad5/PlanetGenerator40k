@@ -55,7 +55,7 @@ namespace PlanetGen
             get
             {
                 if (_PlanetMaterial == null)
-                    _PlanetMaterial = GetComponent<Renderer>().sharedMaterial;
+                    _PlanetMaterial = GetComponent<Renderer>().material;
                 //if (_PlanetMaterial.shader != Shader.Find("Human Unit/Planet"))
                     //_PlanetMaterial.shader = Shader.Find("Human Unit/Planet");
                 return _PlanetMaterial;
@@ -64,7 +64,7 @@ namespace PlanetGen
             {
                 if (_PlanetMaterial == value) return;
                 _PlanetMaterial = value;
-                GetComponent<Renderer>().sharedMaterial = _PlanetMaterial;
+                GetComponent<Renderer>().material = _PlanetMaterial;
                 
             }
         }
@@ -110,13 +110,13 @@ namespace PlanetGen
             {
                 //if (_AtmosphereMaterial == null)
                 //{
-                //    _AtmosphereMaterial = AtmosphereObject.GetComponent<MeshRenderer>().sharedMaterial;
+                //    _AtmosphereMaterial = AtmosphereObject.GetComponent<MeshRenderer>().material;
                 //    UpdateAtmosphereMaterial();
                 //}
                 //if(_AtmosphereMaterial == null)
                 //{
                 //    _AtmosphereMaterial = new Material(Shader.Find("Human Unit/Atmosphere"));
-                //    AtmosphereObject.GetComponent<MeshRenderer>().sharedMaterial = _AtmosphereMaterial;
+                //    AtmosphereObject.GetComponent<MeshRenderer>().material = _AtmosphereMaterial;
                 //    UpdateAtmosphereMaterial();
                 //}
                 //if (_AtmosphereMaterial.shader != Shader.Find("Human Unit/Atmosphere"))
@@ -129,7 +129,7 @@ namespace PlanetGen
             }
             set
             {
-                AtmosphereObject.GetComponent<MeshRenderer>().sharedMaterial = value;
+                AtmosphereObject.GetComponent<MeshRenderer>().material = value;
                 _AtmosphereMaterial = value;
             }
         }
@@ -838,7 +838,7 @@ namespace PlanetGen
 
         private void UpdateAtmosphereMaterial()
         {
-            _AtmosphereMaterial = AtmosphereObject.GetComponent<MeshRenderer>().sharedMaterial;
+            _AtmosphereMaterial = AtmosphereObject.GetComponent<MeshRenderer>().material;
             _AtmosphereMaterial.SetFloat("_Brightness", _AtmosphereBrightness);
             _AtmosphereMaterial.SetFloat("_Density", _AtmosphereDensity);
             _AtmosphereMaterial.SetFloat("_Refraction", _AtmosphereRefraction);
