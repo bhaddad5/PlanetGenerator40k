@@ -79,6 +79,7 @@
     <Compile Include="Assets\PlanetInfoDisplayer\ArmyInfoDisplayer.cs" />
     <Compile Include="Assets\PlanetInfoDisplayer\PlanetAssetLookup.cs" />
     <Compile Include="Assets\PlanetInfoDisplayer\PlanetInfoDisplayer.cs" />
+    <Compile Include="Assets\PlanetInfoDisplayer\PlanetRotator.cs" />
     <Compile Include="Assets\PlanetInfoDisplayer\PlanetVisualDisplayController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
