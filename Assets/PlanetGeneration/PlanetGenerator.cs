@@ -25,6 +25,7 @@ public class PlanetGenerator : MonoBehaviour
 		new CivilizedWorld(),
 		new FeudalWorld(),
 		new ForgeWorld(),
+		new MiningWorld(),
 	};
 
 	private Planet GetPlanet()

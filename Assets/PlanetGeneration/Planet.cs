@@ -51,3 +51,11 @@ public class ForgeWorld : Planet
 	public override PlanetBiomeOptions PlanetBiome => new ForgeWorldBiomeOptions();
 	public override string Population => NumberBuilder.GetNumberString(5000000, 10000000000);
 }
+
+public class MiningWorld : Planet
+{
+	public override string GetPlanetTypeName => "Mining World";
+	public override PlanetDefenseForce GetDefenses => new AgriWorldDefenseForce();
+	public override PlanetBiomeOptions PlanetBiome => new MiningWorldBiomeOptions();
+	public override string Population => NumberBuilder.GetNumberString(500000, 100000000);
+}

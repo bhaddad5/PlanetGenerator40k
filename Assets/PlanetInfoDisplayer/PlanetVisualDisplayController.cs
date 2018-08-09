@@ -7,10 +7,31 @@ public class PlanetVisualDisplayController : MonoBehaviour
 {
 	[SerializeField] private PlanetAssetLookup MatLookup;
 
+	private HPlanet planet;
+
+	void Start()
+	{
+		planet = GetComponent<HPlanet>();
+
+		GetComponent<MeshRenderer>().material = new Material(Shader.Find("Human Unit/Planet Simple"));
+		planet.PlanetMaterial = GetComponent<MeshRenderer>().material;
+
+		//Setup values that won't change
+		planet.Size = .65f;
+		planet.ShoresContrast = 1f;
+		planet.OceanOpacity = 1f;
+		planet.Specularity = .655f;
+		planet.FrostContrast = 1f;
+		planet.Heat = 0f;
+		planet.Fertility = .9f;
+		planet.VegetationContrast = .5f;
+		planet.VegetationFrostResistance = .57f;
+		planet.Ambient = .652f;
+	}
+
 	public void SetupBiome(Biome biome)
 	{
 		var displayInfo = MatLookup.GetBiomeDisplayInfo(biome);
-		var planet = GetComponent<HPlanet>();
 
 		planet.HeightMap = displayInfo.Heights.Heights;
 		planet.NormalsMap = displayInfo.Heights.HeightsNormal;
@@ -23,7 +44,5 @@ public class PlanetVisualDisplayController : MonoBehaviour
 		planet.EmissiveWater = displayInfo.EmissiveWater;
 
 		GetComponent<HPlanet>().RandomSeed = Random.Range(0, 1000);
-		GetComponent<HPlanet>().UpdateDetailsGradientMap();
-		GetComponent<HPlanet>().UpdateHeightGradientMap();
 	}
 }

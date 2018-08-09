@@ -125,7 +125,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: f16ca0bbb448d1147ad98623628363e9, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -181,10 +181,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a62532e71e0871042a0c5b1a27e03b8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _PlanetMaterial: {fileID: 2100000, guid: f16ca0bbb448d1147ad98623628363e9, type: 2}
+  _PlanetMaterial: {fileID: 0}
   _AtmosphereObject: {fileID: 1293245354188090}
   _AtmosphereMaterial: {fileID: 0}
-  _AtmosphereColor: {r: 0.22491, g: 0.459, b: 0.459, a: 1}
+  _AtmosphereColor: {r: 0.370283, g: 0.3868241, b: 0.5, a: 1}
   _AtmosphereSize: 0.195
   _AtmosphereRim: 0
   _AtmosphereRefraction: 0.505

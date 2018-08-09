@@ -54,6 +54,18 @@ public class ForgeWorldBiomeOptions : PlanetBiomeOptions
 	};
 }
 
+public class MiningWorldBiomeOptions : PlanetBiomeOptions
+{
+	protected override List<Biome> BiomeOptions => new List<Biome>()
+	{
+		new Arid(),
+		new Arctic(),
+		new Desert(),
+		new Dead(),
+		new Molten(),
+	};
+}
+
 public class FeudaleWorldBiomeOptions : PlanetBiomeOptions
 {
 	protected override List<Biome> BiomeOptions => new List<Biome>()
