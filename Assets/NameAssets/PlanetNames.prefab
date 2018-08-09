@@ -131,7 +131,39 @@ MonoBehaviour:
 
     Alant,
 
-    Obsid'
+    Obsid,
+
+    Gath,
+
+    Ge,
+
+    G,
+
+    Gaom,
+
+    Galm,
+
+    Fel,
+
+    Fed,
+
+    Esp,
+
+    Erg,
+
+    Est,
+
+    Eln,
+
+    Cast,
+
+    Carn,
+
+    Carp,
+
+    Cl,
+
+    Cos'
 --- !u!114 &114533125124017188
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -164,9 +196,35 @@ MonoBehaviour:
 
     umbria,
 
-    or
+    or,
 
-'
+    ath,
+
+    oft,
+
+    is,
+
+    arm,
+
+    ar,
+
+    andor,
+
+    otia,
+
+    an,
+
+    ath,
+
+    ix,
+
+    ium,
+
+    ax,
+
+    athia,
+
+    os'
 --- !u!114 &114606988927920354
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -193,7 +251,15 @@ MonoBehaviour:
 
     Ascent,
 
-    Progress'
+    Progress,
+
+    Hope,
+
+    Reach,
+
+    Doom,
+
+    Deliverance'
 --- !u!114 &114863544814756102
 MonoBehaviour:
   m_ObjectHideFlags: 1

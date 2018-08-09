@@ -12,7 +12,7 @@ public abstract class Planet
 	public virtual string Population => "";
 }
 
-public class AgriPlanet : Planet
+public class AgriWorld : Planet
 {
 	public override string GetPlanetTypeName => "Agri World";
 	public override PlanetDefenseForce GetDefenses => new AgriWorldDefenseForce();

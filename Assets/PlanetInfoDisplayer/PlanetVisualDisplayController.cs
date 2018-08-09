@@ -27,6 +27,7 @@ public class PlanetVisualDisplayController : MonoBehaviour
 		planet.VegetationContrast = .5f;
 		planet.VegetationFrostResistance = .57f;
 		planet.Ambient = .652f;
+		planet.Relief = 1f;
 	}
 
 	public void SetupBiome(Biome biome)
@@ -42,6 +43,7 @@ public class PlanetVisualDisplayController : MonoBehaviour
 		planet.AtmosphereColor = displayInfo.AtmosphereColor;
 		planet.LiquidColor = displayInfo.WaterColor;
 		planet.EmissiveWater = displayInfo.EmissiveWater;
+		planet.Size = Random.Range(.25f, .65f);
 
 		GetComponent<HPlanet>().RandomSeed = Random.Range(0, 1000);
 	}

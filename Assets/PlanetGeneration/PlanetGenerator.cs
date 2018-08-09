@@ -21,7 +21,7 @@ public class PlanetGenerator : MonoBehaviour
 	private List<Planet> PlanetTypes = new List<Planet>()
 	{
 		new HiveWorld(),
-		new AgriPlanet(),
+		new AgriWorld(),
 		new CivilizedWorld(),
 		new FeudalWorld(),
 		new ForgeWorld(),
