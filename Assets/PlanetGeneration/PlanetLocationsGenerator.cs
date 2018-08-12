@@ -6,11 +6,12 @@ public class PlanetLocationsData
 {
 	public List<LocationData> Locations = new List<LocationData>();
 
-	public PlanetLocationsData(PlanetLocationsGenerator planetLocsGen)
+	public PlanetLocationsData(PlanetLocationsGenerator planetLocsGen, long planetPop)
 	{
+		long maxLocationPop = planetPop / planetLocsGen.NumLocations;
 		foreach (LocationGenerator location in planetLocsGen.PlanetaryLocations())
 		{
-			Locations.Add(new LocationData(location));
+			Locations.Add(new LocationData(location, maxLocationPop));
 		}
 	}
 }

@@ -144,4 +144,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TableName: Mine
-  Names: '{Metals}pit'
+  Names: '{Metals}pit,
+
+    {Metals} Deeps'

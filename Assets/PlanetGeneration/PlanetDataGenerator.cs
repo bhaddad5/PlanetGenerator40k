@@ -22,7 +22,7 @@ public class PlanetData
 
 		PopulationString = planetGen.GetPopulationString(Population);
 		DefensesData = new PlanetDefenseForceData(planetGen.GetDefenses);
-		LocationsData = new PlanetLocationsData(planetGen.LocationsGen);
+		LocationsData = new PlanetLocationsData(planetGen.LocationsGen, Population);
 		BiomeData = planetGen.PlanetBiome.GetPlanetBiome();
 	}
 }
