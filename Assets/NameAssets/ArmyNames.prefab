@@ -59,11 +59,11 @@ MonoBehaviour:
   TableName: MechanizedArmy
   Names: '{Numeral} {MechanizedArmyTypes},
 
-    {Metals} {MechanizedArmyTypes},
+    The {Metals} {MechanizedArmyTypes},
 
-    {ObjectAdjective} {MechanizedArmyTypes},
+    The {ObjectAdjective} {MechanizedArmyTypes},
 
-    {Metals} {MechanizedArmyTypes},
+    The {Metals} {MechanizedArmyTypes},
 
     {PlanetRulerName}''s  {MechanizedArmyTypes},
 
@@ -82,9 +82,9 @@ MonoBehaviour:
   TableName: ScoutArmy
   Names: '{Numeral} {ScoutArmyTypes},
 
-    {Metals} {ScoutArmyTypes},
+    The {Metals} {ScoutArmyTypes},
 
-    {ObjectAdjective} {ScoutArmyTypes},
+    The {ObjectAdjective} {ScoutArmyTypes},
 
     {PlanetRulerName}''s  {ScoutArmyTypes},
 
@@ -154,9 +154,9 @@ MonoBehaviour:
   TableName: GuardArmy
   Names: '{Numeral} {InfantryArmyTypes},
 
-    {Metals} {InfantryArmyTypes},
+    The {Metals} {InfantryArmyTypes},
 
-    {ObjectAdjective} {InfantryArmyTypes},
+    The {ObjectAdjective} {InfantryArmyTypes},
 
     {PlanetRulerName}''s  {InfantryArmyTypes},
 

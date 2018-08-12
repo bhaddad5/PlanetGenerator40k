@@ -38,4 +38,67 @@ public abstract class PlanetLocationsGenerator
 public class HiveWorldLocationsGenerator : PlanetLocationsGenerator
 {
 	public override int NumLocations => 3;
+	protected override List<LocationGenerator> LocationTypes => new List<LocationGenerator>()
+	{
+		new HiveCityGenerator(),
+		new HiveCityGenerator(),
+		new HiveCityGenerator(),
+		new HiveCityGenerator(),
+		new CathedralGenerator(),
+		new MineGenerator(),
+		new ManufactorumGenerator(),
+	};
+}
+
+public class CivilizedWorldLocationsGenerator : PlanetLocationsGenerator
+{
+	public override int NumLocations => 1;
+	protected override List<LocationGenerator> LocationTypes => new List<LocationGenerator>()
+	{
+		new HiveCityGenerator(),
+		new CathedralGenerator(),
+	};
+}
+
+public class AgriWorldLocationsGenerator : PlanetLocationsGenerator
+{
+	public override int NumLocations => 1;
+	protected override List<LocationGenerator> LocationTypes => new List<LocationGenerator>()
+	{
+		new HiveCityGenerator(),
+		new CathedralGenerator(),
+	};
+}
+
+public class MiningWorldLocationsGenerator : PlanetLocationsGenerator
+{
+	public override int NumLocations => 2;
+	protected override List<LocationGenerator> LocationTypes => new List<LocationGenerator>()
+	{
+		new HiveCityGenerator(),
+		new MineGenerator(),
+		new MineGenerator(),
+	};
+}
+
+public class ForgeWorldLocationsGenerator : PlanetLocationsGenerator
+{
+	public override int NumLocations => 2;
+	protected override List<LocationGenerator> LocationTypes => new List<LocationGenerator>()
+	{
+		new HiveCityGenerator(),
+		new MineGenerator(),
+		new ManufactorumGenerator(),
+		new ManufactorumGenerator(),
+		new ManufactorumGenerator(),
+	};
+}
+
+public class FeudalWorldLocationsGenerator : PlanetLocationsGenerator
+{
+	public override int NumLocations => 1;
+	protected override List<LocationGenerator> LocationTypes => new List<LocationGenerator>()
+	{
+		new FeudalCastleGenerator(),
+	}; 
 }

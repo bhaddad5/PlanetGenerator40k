@@ -7,10 +7,10 @@ public static class NameBuilder
 {
 	private static Dictionary<string, List<string>> nameTables = new Dictionary<string, List<string>>();
 
-	public static string GetName(string tableName)
+	public static string GetName(string tableName, string fromTable = "")
 	{
 		if (!nameTables.ContainsKey(tableName))
-			throw new Exception("Could not find table: " + tableName);
+			throw new Exception("Could not find table: " + tableName + ", referenced in table:" + fromTable);
 
 		var table = nameTables[tableName];
 		string foundTableEntry = table[UnityEngine.Random.Range(0, table.Count)];
@@ -21,7 +21,7 @@ public static class NameBuilder
 		for (int i = 0; i < split.Length; i++)
 		{
 			if (i % 2 == 1)
-				result += GetName(split[i]);
+				result += GetName(split[i], tableName);
 			else result += split[i];
 		}
 

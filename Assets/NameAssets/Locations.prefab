@@ -20,8 +20,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4861011431018562}
   - component: {fileID: 114360520627540662}
-  - component: {fileID: 114673546879507370}
-  - component: {fileID: 114716132442942302}
+  - component: {fileID: 114843500024112596}
+  - component: {fileID: 114015347041942852}
+  - component: {fileID: 114965838309469426}
+  - component: {fileID: 114787319146375920}
+  - component: {fileID: 114539473099598836}
   m_Layer: 0
   m_Name: Locations
   m_TagString: Untagged
@@ -42,6 +45,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114015347041942852
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1207057535131128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60d82449a6f24a44599f39dd7935712f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TableName: FeudalLocationSuffix
+  Names: 'haven,
+
+    mont,
+
+    hold,
+
+    vale'
 --- !u!114 &114360520627540662
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -54,12 +76,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TableName: HiveCity
-  Names: '{HiveLatinAdjective} {HiveLatinNouns},
+  Names: '{LatinAdjective} {LatinNouns},
 
-    Hive {HiveLatinNouns},
+    Hive {LatinNouns},
 
-    {HiveLatinNouns} Hive'
---- !u!114 &114673546879507370
+    {LatinNouns} Hive'
+--- !u!114 &114539473099598836
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -70,21 +92,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60d82449a6f24a44599f39dd7935712f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TableName: HiveLatinAdjective
-  Names: 'Magna,
+  TableName: Factory
+  Names: '{LatinAdjective} Manufactorum,
 
-    Eternum,
+    {LatinAdjective} Forge,
 
-    Imperius,
+    Forge {LatinNouns},
 
-    Multus,
-
-    Malus,
-
-    Novus,
-
-    Laetus'
---- !u!114 &114716132442942302
+    Forge {LatinNouns}'
+--- !u!114 &114787319146375920
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,11 +111,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60d82449a6f24a44599f39dd7935712f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TableName: HiveLatinNouns
-  Names: 'Bonum,
+  TableName: Cathedral
+  Names: '{LatinAdjective} Basillica,
 
-    Portum,
+    {LatinAdjective} Cathedral,
 
-    Abitus,
+    Basillica {LatinNouns},
 
-    Acedia'
+    Cathedral {LatinNouns}'
+--- !u!114 &114843500024112596
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1207057535131128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60d82449a6f24a44599f39dd7935712f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TableName: FeudalCastle
+  Names: '{ObjectAdjective}{FeudalLocationSuffix}'
+--- !u!114 &114965838309469426
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1207057535131128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60d82449a6f24a44599f39dd7935712f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TableName: Mine
+  Names: '{Metals}pit'

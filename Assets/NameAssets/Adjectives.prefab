@@ -74,7 +74,9 @@ MonoBehaviour:
 
     Venerable,
 
-    Unearthed'
+    Unearthed,
+
+    Burned'
 --- !u!114 &114258613437993694
 MonoBehaviour:
   m_ObjectHideFlags: 1

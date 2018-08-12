@@ -6,8 +6,10 @@ using TMPro;
 
 public class PlanetInfoDisplayer : MonoBehaviour
 {
+	public LocationInfoDisplayer LocationInfoDisplayer;
+	public RectTransform LocationDisplayParent;
 	public ArmyInfoDisplayer ArmyInfoDisplayPrefab;
-	public Transform ArmyDisplayParent;
+	public RectTransform ArmyDisplayParent;
 	public PlanetVisualDisplayController PlanetVisualizer;
 
 	public TMP_Text PlanetName;
@@ -24,6 +26,22 @@ public class PlanetInfoDisplayer : MonoBehaviour
 		PlanetPopulation.text = "Population: " + planetData.PopulationString;
 		RulerName.text = "Ruler: " + planetData.Ruler;
 
+		PlanetVisualizer.SetupBiome(planetData.BiomeData);
+
+		foreach (Transform child in LocationDisplayParent.transform)
+		{
+			GameObject.Destroy(child.gameObject);
+		}
+
+		foreach (LocationData location in planetData.LocationsData.Locations)
+		{
+			var locationDisplay = Instantiate(LocationInfoDisplayer);
+			locationDisplay.transform.SetParent(LocationDisplayParent);
+			locationDisplay.DisplayLocationInfo(location);
+		}
+
+		LocationDisplayParent.sizeDelta = new Vector2(LocationInfoDisplayer.Size.x, (LocationInfoDisplayer.Size.y + LocationDisplayParent.GetComponent<VerticalLayoutGroup>().spacing) * planetData.LocationsData.Locations.Count);
+
 		foreach (Transform child in ArmyDisplayParent.transform)
 		{
 			GameObject.Destroy(child.gameObject);
@@ -36,6 +54,6 @@ public class PlanetInfoDisplayer : MonoBehaviour
 			armyDisplay.DisplayArmy(army);
 		}
 
-		PlanetVisualizer.SetupBiome(planetData.BiomeData);
+		ArmyDisplayParent.sizeDelta = new Vector2(ArmyInfoDisplayPrefab.Size.x, (ArmyInfoDisplayPrefab.Size.y + LocationDisplayParent.GetComponent<VerticalLayoutGroup>().spacing) * planetData.DefensesData.Armies.Count);
 	}
 }

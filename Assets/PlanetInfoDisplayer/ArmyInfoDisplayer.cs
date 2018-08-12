@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class ArmyInfoDisplayer : MonoBehaviour
 {
+	public Vector2 Size;
 	public TMP_Text ArmyName;
 	public TMP_Text ArmyStrength;
 

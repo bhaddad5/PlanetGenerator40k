@@ -44,6 +44,7 @@ public class AgriWorld : PlanetDataGenerator
 	public override string GetPlanetTypeName => "Agri World";
 	public override PlanetDefenseForceGenerator GetDefenses => new AgriWorldDefenseForceGenerator();
 	public override PlanetBiomeGenerator PlanetBiome => new AgriWorldBiomeGenerator();
+	public override PlanetLocationsGenerator LocationsGen => new AgriWorldLocationsGenerator();
 	public override long GetPopulation => NumberBuilder.GetRandomNumber(500000, 100000000);
 }
 
@@ -52,6 +53,7 @@ public class HiveWorld : PlanetDataGenerator
 	public override string GetPlanetTypeName => "Hive World";
 	public override PlanetDefenseForceGenerator GetDefenses => new HiveWorldDefenseForceGenerator();
 	public override PlanetBiomeGenerator PlanetBiome => new HiveWorldBiomeGenerator();
+	public override PlanetLocationsGenerator LocationsGen => new HiveWorldLocationsGenerator();
 	public override long GetPopulation => NumberBuilder.GetRandomNumber(5000000000, 100000000000);
 }
 
@@ -59,6 +61,7 @@ public class CivilizedWorld : PlanetDataGenerator
 {
 	public override string GetPlanetTypeName => "Civilized World";
 	public override PlanetBiomeGenerator PlanetBiome => new CivilizedWorldBiomeGenerator();
+	public override PlanetLocationsGenerator LocationsGen => new CivilizedWorldLocationsGenerator();
 	public override long GetPopulation => NumberBuilder.GetRandomNumber(5000000, 1000000000);
 }
 
@@ -68,6 +71,7 @@ public class FeudalWorld : PlanetDataGenerator
 	public override string GetPlanetTypeName => "Feudal World";
 	public override PlanetDefenseForceGenerator GetDefenses => new FeudalWorldDefenseForceGenerator();
 	public override PlanetBiomeGenerator PlanetBiome => new FeudaleWorldBiomeGenerator();
+	public override PlanetLocationsGenerator LocationsGen => new FeudalWorldLocationsGenerator();
 	public override long GetPopulation => NumberBuilder.GetRandomNumber(5000000, 100000000);
 }
 
@@ -76,6 +80,7 @@ public class ForgeWorld : PlanetDataGenerator
 	public override string GetPlanetTypeName => "Forge World";
 	public override PlanetDefenseForceGenerator GetDefenses => new ForgeWorldDefenseForceGenerator();
 	public override PlanetBiomeGenerator PlanetBiome => new ForgeWorldBiomeGenerator();
+	public override PlanetLocationsGenerator LocationsGen => new ForgeWorldLocationsGenerator();
 	public override long GetPopulation => NumberBuilder.GetRandomNumber(5000000, 10000000000);
 }
 
@@ -84,5 +89,6 @@ public class MiningWorld : PlanetDataGenerator
 	public override string GetPlanetTypeName => "Mining World";
 	public override PlanetDefenseForceGenerator GetDefenses => new AgriWorldDefenseForceGenerator();
 	public override PlanetBiomeGenerator PlanetBiome => new MiningWorldBiomeGenerator();
+	public override PlanetLocationsGenerator LocationsGen => new MiningWorldLocationsGenerator();
 	public override long GetPopulation => NumberBuilder.GetRandomNumber(500000, 100000000);
 }

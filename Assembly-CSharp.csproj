@@ -79,6 +79,7 @@
     <Compile Include="Assets\PlanetGeneration\PlanetDefenseForceGenerator.cs" />
     <Compile Include="Assets\PlanetGeneration\PlanetLocationsGenerator.cs" />
     <Compile Include="Assets\PlanetInfoDisplayer\ArmyInfoDisplayer.cs" />
+    <Compile Include="Assets\PlanetInfoDisplayer\LocationInfoDisplayer.cs" />
     <Compile Include="Assets\PlanetInfoDisplayer\PlanetAssetLookup.cs" />
     <Compile Include="Assets\PlanetInfoDisplayer\PlanetInfoDisplayer.cs" />
     <Compile Include="Assets\PlanetInfoDisplayer\PlanetRotator.cs" />
