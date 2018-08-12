@@ -559,6 +559,21 @@ Prefab:
       propertyPath: DeadGray.b
       value: 0.38679248
       objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: DeadRust.r
+      value: 0.13333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: DeadRust.g
+      value: 0.08235294
+      objectReference: {fileID: 0}
+    - target: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
+        type: 2}
+      propertyPath: DeadRust.b
+      value: 0.08235294
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e10f7ad0d5778f04695a7e270e426b54, type: 2}
   m_IsPrefabAsset: 0

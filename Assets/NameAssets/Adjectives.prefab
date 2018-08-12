@@ -137,7 +137,9 @@ MonoBehaviour:
 
     Iron,
 
-    Steel'
+    Steel,
+
+    Prometheum'
 --- !u!114 &114885965143337576
 MonoBehaviour:
   m_ObjectHideFlags: 1

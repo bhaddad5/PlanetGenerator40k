@@ -31,20 +31,19 @@ public class PlanetVisualDisplayController : MonoBehaviour
 		planet.AtmosphereBrightness = .05f;
 	}
 
-	public void SetupBiome(Biome biome)
+	public void SetupBiome(BiomeData biome)
 	{
-		var displayInfo = MatLookup.GetBiomeDisplayInfo(biome);
 
-		planet.HeightMap = displayInfo.Heights.Heights;
-		planet.NormalsMap = displayInfo.Heights.HeightsNormal;
-		planet.DetailsMap = displayInfo.Details;
-		planet.Frost = displayInfo.FrostLevel;
-		planet.VegetationColor = displayInfo.VegitationColor;
-		planet.WaterLevel = displayInfo.WaterLevel;
-		planet.AtmosphereColor = displayInfo.AtmosphereColor;
-		planet.LiquidColor = displayInfo.WaterColor;
-		planet.EmissiveWater = displayInfo.EmissiveWater;
-		planet.Size = Random.Range(.25f, .65f);
+		planet.HeightMap = MatLookup.GetPlanetTexture(biome.Heights).Heights;
+		planet.NormalsMap = MatLookup.GetPlanetTexture(biome.Heights).HeightsNormal;
+		planet.DetailsMap = MatLookup.GetDetailsTexture(biome.Details);
+		planet.Frost = biome.FrostLevel;
+		planet.WaterLevel = biome.WaterLevel;
+		planet.VegetationColor = MatLookup.GetVegitationColor(biome.VegitationColor);
+		planet.AtmosphereColor = MatLookup.GetAtmosphereColor(biome.AtmosphereColor);
+		planet.LiquidColor = MatLookup.GetWaterColor(biome.WaterColor);
+		planet.EmissiveWater = biome.EmissiveWater;
+		planet.Size = biome.Size;
 
 		GetComponent<HPlanet>().RandomSeed = Random.Range(0, 1000);
 	}

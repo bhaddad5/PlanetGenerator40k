@@ -71,7 +71,8 @@
     <Compile Include="Assets\NameGenerator\NumberBuilder.cs" />
     <Compile Include="Assets\NameGenerator\TableSpawner.cs" />
     <Compile Include="Assets\PlanetGeneration\ArmyGenerator.cs" />
-    <Compile Include="Assets\PlanetGeneration\Biome.cs" />
+    <Compile Include="Assets\PlanetGeneration\BiomeGenerator.cs" />
+    <Compile Include="Assets\PlanetGeneration\Helpers.cs" />
     <Compile Include="Assets\PlanetGeneration\LocationGenerator.cs" />
     <Compile Include="Assets\PlanetGeneration\PlanetBiomeGenerator.cs" />
     <Compile Include="Assets\PlanetGeneration\PlanetBuilder.cs" />

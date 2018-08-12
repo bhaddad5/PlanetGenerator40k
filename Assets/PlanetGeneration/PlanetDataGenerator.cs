@@ -11,7 +11,7 @@ public class PlanetData
 	public string PopulationString;
 	public PlanetDefenseForceData DefensesData;
 	public PlanetLocationsData LocationsData;
-	public Biome BiomeData;
+	public BiomeData BiomeData;
 
 	public PlanetData(PlanetDataGenerator planetGen)
 	{
@@ -23,7 +23,7 @@ public class PlanetData
 		PopulationString = planetGen.GetPopulationString(Population);
 		DefensesData = new PlanetDefenseForceData(planetGen.GetDefenses);
 		LocationsData = new PlanetLocationsData(planetGen.LocationsGen, Population);
-		BiomeData = planetGen.PlanetBiome.GetPlanetBiome();
+		BiomeData = new BiomeData(planetGen.PlanetBiome.GetPlanetBiomeGenerator());
 	}
 }
 

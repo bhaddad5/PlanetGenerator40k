@@ -22,7 +22,7 @@ public class PlanetInfoDisplayer : MonoBehaviour
 	public void DisplayPlanet(PlanetData planetData)
 	{
 		PlanetName.text = planetData.Name;
-		PlanetTypeName.text = planetData.TypeName + " (" + planetData.BiomeData.Descriptor + ")";
+		PlanetTypeName.text = planetData.TypeName + " (" + planetData.BiomeData.Description + ")";
 		PlanetPopulation.text = "Population: " + planetData.PopulationString;
 		RulerName.text = "Ruler: " + planetData.Ruler;
 
