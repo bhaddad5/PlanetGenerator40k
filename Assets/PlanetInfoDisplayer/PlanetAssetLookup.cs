@@ -145,7 +145,7 @@ public class PlanetAssetLookup : MonoBehaviour
 		{
 			defaultInfo.Heights = oneof(HeightsRegular, HeightsCraters, HeightsCraters, HeightsCraters, HeightsHigher);
 			defaultInfo.FrostLevel = Random.Range(0, fullFrost - .22f);
-			defaultInfo.VegitationColor = oneof(MoltonAshDark, MoltonAshLight, ArcticWhite, DeadGray);
+			defaultInfo.VegitationColor = oneof(MoltonAshDark, MoltonAshLight, DeadGray);
 			defaultInfo.WaterLevel = 0;
 		}
 

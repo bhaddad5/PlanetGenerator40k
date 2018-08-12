@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlanetGenerator : MonoBehaviour
+public class PlanetBuilder : MonoBehaviour
 {
 	public PlanetInfoDisplayer PlanetDisplayer;
 
@@ -13,12 +13,12 @@ public class PlanetGenerator : MonoBehaviour
 
 	public void GeneratePlanet()
 	{
-		Planet planet = GetPlanet();
+		PlanetData planetData = GetPlanet();
 
-		PlanetDisplayer.DisplayPlanet(planet);
+		PlanetDisplayer.DisplayPlanet(planetData);
 	}
 
-	private List<Planet> PlanetTypes = new List<Planet>()
+	private List<PlanetDataGenerator> PlanetTypes = new List<PlanetDataGenerator>()
 	{
 		new HiveWorld(),
 		new AgriWorld(),
@@ -28,9 +28,9 @@ public class PlanetGenerator : MonoBehaviour
 		new MiningWorld(),
 	};
 
-	private Planet GetPlanet()
+	private PlanetData GetPlanet()
 	{
-		return PlanetTypes[Random.Range(0, PlanetTypes.Count)];
+		return new PlanetData(PlanetTypes[Random.Range(0, PlanetTypes.Count)]);
 	}
 	
 }

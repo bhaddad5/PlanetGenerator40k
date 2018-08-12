@@ -28,6 +28,7 @@ public class PlanetVisualDisplayController : MonoBehaviour
 		planet.VegetationFrostResistance = .57f;
 		planet.Ambient = .652f;
 		planet.Relief = 1f;
+		planet.AtmosphereBrightness = .05f;
 	}
 
 	public void SetupBiome(Biome biome)

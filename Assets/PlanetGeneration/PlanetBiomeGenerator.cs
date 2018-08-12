@@ -2,7 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class PlanetBiomeOptions
+public class PlanetBiomeData
+{
+	public Biome Biome;
+
+	public PlanetBiomeData(PlanetBiomeGenerator biomeGen)
+	{
+		Biome = biomeGen.GetPlanetBiome();
+	}
+}
+
+public abstract class PlanetBiomeGenerator
 {
 	protected virtual List<Biome> BiomeOptions => new List<Biome>() { new Continental() };
 
@@ -12,7 +22,7 @@ public abstract class PlanetBiomeOptions
 	}
 }
 
-public class AgriWorldBiomeOptions : PlanetBiomeOptions
+public class AgriWorldBiomeGenerator : PlanetBiomeGenerator
 {
 	protected override List<Biome> BiomeOptions => new List<Biome>()
 	{
@@ -20,7 +30,7 @@ public class AgriWorldBiomeOptions : PlanetBiomeOptions
 	};
 }
 
-public class CivilizedWorldBiomeOptions : PlanetBiomeOptions
+public class CivilizedWorldBiomeGenerator : PlanetBiomeGenerator
 {
 	protected override List<Biome> BiomeOptions => new List<Biome>()
 	{
@@ -31,7 +41,7 @@ public class CivilizedWorldBiomeOptions : PlanetBiomeOptions
 	};
 }
 
-public class HiveWorldBiomeOptions : PlanetBiomeOptions
+public class HiveWorldBiomeGenerator : PlanetBiomeGenerator
 {
 	protected override List<Biome> BiomeOptions => new List<Biome>()
 	{
@@ -44,7 +54,7 @@ public class HiveWorldBiomeOptions : PlanetBiomeOptions
 	};
 }
 
-public class ForgeWorldBiomeOptions : PlanetBiomeOptions
+public class ForgeWorldBiomeGenerator : PlanetBiomeGenerator
 {
 	protected override List<Biome> BiomeOptions => new List<Biome>()
 	{
@@ -54,7 +64,7 @@ public class ForgeWorldBiomeOptions : PlanetBiomeOptions
 	};
 }
 
-public class MiningWorldBiomeOptions : PlanetBiomeOptions
+public class MiningWorldBiomeGenerator : PlanetBiomeGenerator
 {
 	protected override List<Biome> BiomeOptions => new List<Biome>()
 	{
@@ -66,7 +76,7 @@ public class MiningWorldBiomeOptions : PlanetBiomeOptions
 	};
 }
 
-public class FeudaleWorldBiomeOptions : PlanetBiomeOptions
+public class FeudaleWorldBiomeGenerator : PlanetBiomeGenerator
 {
 	protected override List<Biome> BiomeOptions => new List<Biome>()
 	{

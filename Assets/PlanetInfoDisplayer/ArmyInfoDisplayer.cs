@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 
 public class ArmyInfoDisplayer : MonoBehaviour
@@ -8,12 +6,12 @@ public class ArmyInfoDisplayer : MonoBehaviour
 	public TMP_Text ArmyName;
 	public TMP_Text ArmyStrength;
 
-	public void DisplayArmy(Army army)
+	public void DisplayArmy(ArmyData armyData)
 	{
-		ArmyName.text = army.ArmyName + " (" + army.ArmyType + ")";
-		ArmyStrength.text = army.ArmyStrength;
+		ArmyName.text = armyData.ArmyName + " (" + armyData.ArmyType + ")";
+		ArmyStrength.text = armyData.ArmyStrengthString;
 
-		if (army.Hostile)
+		if (armyData.HostileArmy)
 		{
 			ArmyName.color = Color.red;
 			ArmyStrength.color = Color.red;

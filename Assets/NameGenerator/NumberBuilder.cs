@@ -5,9 +5,8 @@ using Random = System.Random;
 
 public static class NumberBuilder
 {
-	public static string GetNumberString(long min, long max)
+	public static string GetNumberString(long number)
 	{
-		long number = LongRandom(min, max + 1, new Random(UnityEngine.Random.Range(0, 1000)));
 		int numDigits = number.ToString().Length;
 
 		if (numDigits <= 3)
@@ -21,6 +20,11 @@ public static class NumberBuilder
 		else if (numDigits <= 15)
 			return (number / 1000000000000).ToString() + " trillion";
 		else return number.ToString();
+	}
+
+	public static long GetRandomNumber(long min, long max)
+	{
+		return LongRandom(min, max + 1, new Random(UnityEngine.Random.Range(0, 1000)));
 	}
 
 	private static long LongRandom(long min, long max, Random rand)
