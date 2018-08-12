@@ -32,4 +32,25 @@ public static class NameBuilder
 	{
 		nameTables[nameTable.TableName] = nameTable.GetNameOptions();
 	}
+
+	public static bool ValidateNameReferences()
+	{
+		foreach (KeyValuePair<string, List<string>> tablePair in nameTables)
+		{
+			foreach (string tableOption in tablePair.Value)
+			{
+				var split = tableOption.Split(new[] { '{', '}' });
+
+				for (int i = 0; i < split.Length; i++)
+				{
+					if (i % 2 == 1 && !nameTables.ContainsKey(split[i]))
+					{
+						Debug.LogError("Could not find table: \"" + split[i] + "\" inside string: " + tableOption + " in table: " + tablePair.Key);
+						return false;
+					}
+				}
+			}
+		}
+		return true;
+	}
 }

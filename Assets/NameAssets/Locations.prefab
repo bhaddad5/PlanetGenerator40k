@@ -152,13 +152,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TableName: Cathedral
-  Names: '{LatinAdjective} Basillica,
-
-    {LatinAdjective} Cathedral,
+  Names: '{LatinAdjective} Cathedral,
 
     Basillica {LatinNouns},
 
-    Cathedral {LatinNouns}'
+    Cathedral of Saint {EmpireFirstName} the {HolyDescriptors},
+
+    Basillica of Saint {EmpireFirstName} the {HolyDescriptors}'
 --- !u!114 &114843500024112596
 MonoBehaviour:
   m_ObjectHideFlags: 1

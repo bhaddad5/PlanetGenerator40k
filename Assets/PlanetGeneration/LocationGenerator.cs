@@ -35,7 +35,7 @@ public class HiveCityGenerator : LocationGenerator
 {
 	public override string LocationType => "Hive City";
 	public override string LocationName => NameBuilder.GetName("HiveCity");
-	public override long LocationPopulation(long maxPop) => NumberBuilder.GetRandomNumber(Math.Min(10000000, maxPop/2), Math.Min(1000000000, maxPop));
+	public override long LocationPopulation(long maxPop) => NumberBuilder.GetRandomNumber(Math.Min(100000000, maxPop/2), Math.Min(10000000000, maxPop));
 	public override string LocationPopulationString(long pop, long popSecondary) => NumberBuilder.GetNumberString(pop) + " hivers";
 }
 
@@ -54,7 +54,7 @@ public class ManufactorumGenerator : LocationGenerator
 	public override string LocationName => NameBuilder.GetName("Factory");
 	public override long LocationPopulation(long maxPop) => NumberBuilder.GetRandomNumber(2000, 10000);
 	public override long LocationPopulationSecondary(long maxPop) => NumberBuilder.GetRandomNumber(Math.Min(maxPop, 500000), Math.Min(maxPop, 5000000));
-	public override string LocationPopulationString(long pop, long popSecondary) => NumberBuilder.GetNumberString(pop) + " tech priests, " + NumberBuilder.GetNumberString(popSecondary) + " indentured lavorers";
+	public override string LocationPopulationString(long pop, long popSecondary) => NumberBuilder.GetNumberString(pop) + " tech priests, " + NumberBuilder.GetNumberString(popSecondary) + " indentured laborers";
 }
 
 public class CathedralGenerator : LocationGenerator

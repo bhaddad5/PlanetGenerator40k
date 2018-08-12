@@ -108,7 +108,9 @@ MonoBehaviour:
 
     Stubber,
 
-    Lasgun'
+    Lasgun,
+
+    Autogun'
 --- !u!114 &114621404786815552
 MonoBehaviour:
   m_ObjectHideFlags: 1

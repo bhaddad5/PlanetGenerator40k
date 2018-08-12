@@ -17,5 +17,7 @@ public class TableSpawner : MonoBehaviour
 				NameBuilder.AddTable(nameTable);
 			}
 		}
+
+		NameBuilder.ValidateNameReferences();
 	}
 }

@@ -68,7 +68,97 @@ MonoBehaviour:
 
     T,
 
-    Gabr'
+    Gabr,
+
+    Anton,
+
+    Ard,
+
+    Alb,
+
+    Aloys,
+
+    Andre,
+
+    Cyb,
+
+    Cyv,
+
+    Cyr,
+
+    Clug,
+
+    Dor,
+
+    Fer,
+
+    For,
+
+    Kasm,
+
+    Hel,
+
+    Hark,
+
+    Haraz,
+
+    Har,
+
+    Hok,
+
+    Kat,
+
+    Kab,
+
+    Pi,
+
+    Voed,
+
+    Lust,
+
+    Lys,
+
+    Mach,
+
+    Nels,
+
+    Pard,
+
+    Pas,
+
+    Raeal,
+
+    Rogg,
+
+    Roth,
+
+    Schaeff,
+
+    Sej,
+
+    Som,
+
+    Stran,
+
+    Jen,
+
+    Tar,
+
+    Tran,
+
+    Thor,
+
+    Urien,
+
+    Varg,
+
+    Volk,
+
+    Grumm,
+
+    Osk,
+
+    Astr'
 --- !u!114 &114433845963818078
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -91,7 +181,45 @@ MonoBehaviour:
 
     oth,
 
-    ial'
+    ial,
+
+    id,
+
+    en,
+
+    erich,
+
+    us,
+
+    us,
+
+    an,
+
+    und,
+
+    ense,
+
+    end,
+
+    arius,
+
+    enburg,
+
+    erburg,
+
+    ers,
+
+    is,
+
+    ot,
+
+    at,
+
+    es,
+
+    ov,
+
+    ar'
 --- !u!114 &114851948667432940
 MonoBehaviour:
   m_ObjectHideFlags: 1
