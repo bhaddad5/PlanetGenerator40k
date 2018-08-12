@@ -131,6 +131,8 @@ MonoBehaviour:
 
     Alant,
 
+    Ash,
+
     Obsid,
 
     Gath,
@@ -163,7 +165,231 @@ MonoBehaviour:
 
     Cl,
 
-    Cos'
+    Cos,
+
+    Bal,
+
+    Barb,
+
+    Blitz,
+
+    Blood,
+
+    Bor,
+
+    Dol,
+
+    Devl,
+
+    Dav,
+
+    Drel,
+
+    Dyk,
+
+    Hele,
+
+    Tex,
+
+    Honour,
+
+    Horest,
+
+    Hyad,
+
+    Hypas,
+
+    I,
+
+    Ing,
+
+    Iron,
+
+    Jagg,
+
+    Jag,
+
+    Jon,
+
+    Kala,
+
+    Katar,
+
+    Kath,
+
+    Kat,
+
+    Kaur,
+
+    Kel,
+
+    Lac,
+
+    Lass,
+
+    Lod,
+
+    Lorn,
+
+    Luc,
+
+    Mal,
+
+    Man,
+
+    Megh,
+
+    Megid,
+
+    Moir,
+
+    Monr,
+
+    Mund,
+
+    Mys,
+
+    Nekk,
+
+    Nostr,
+
+    Nom,
+
+    Nymid,
+
+    Olymp,
+
+    Ord,
+
+    Op,
+
+    Omnic,
+
+    Ophid,
+
+    Persep,
+
+    Palat,
+
+    Perin,
+
+    Perl,
+
+    Phaet,
+
+    Phob,
+
+    Pic,
+
+    Proth,
+
+    Pyrrh,
+
+    Ouint,
+
+    Quat,
+
+    Ran,
+
+    Radn,
+
+    Rax,
+
+    Rhod,
+
+    Sab,
+
+    Sabat,
+
+    Sag,
+
+    Sanct,
+
+    Sem,
+
+    Seph,
+
+    Sept,
+
+    Sicar,
+
+    Sker,
+
+    Solst,
+
+    Sopr,
+
+    Styg,
+
+    Sycor,
+
+    Tahn,
+
+    Talass,
+
+    Tal,
+
+    Tanak,
+
+    Tempor,
+
+    Ter,
+
+    Thain,
+
+    Tit,
+
+    Trian,
+
+    Tyr,
+
+    Uld,
+
+    Unl,
+
+    Ur,
+
+    Vallh,
+
+    Val,
+
+    Vard,
+
+    Var,
+
+    Veon,
+
+    Vern,
+
+    Vig,
+
+    Vict,
+
+    Voln,
+
+    Vols,
+
+    Winter,
+
+    Sand,
+
+    Xars,
+
+    Ynn,
+
+    Yar,
+
+    Ymnm
+
+    Yul,
+
+    Zalam,
+
+    Zeph,
+
+    Zor,
+
+    Zos'
 --- !u!114 &114533125124017188
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -224,7 +450,43 @@ MonoBehaviour:
 
     athia,
 
-    os'
+    os,
+
+    ek,
+
+    orus,
+
+    arus,
+
+    eill,
+
+    in,
+
+    a,
+
+    astra,
+
+    os,
+
+    uva,
+
+    ifi,
+
+    if,
+
+    anus,
+
+    ano,
+
+    amus,
+
+    anor,
+
+    ion,
+
+    ama,
+
+    alla'
 --- !u!114 &114606988927920354
 MonoBehaviour:
   m_ObjectHideFlags: 1
