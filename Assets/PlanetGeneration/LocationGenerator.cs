@@ -73,3 +73,11 @@ public class MineGenerator : LocationGenerator
 	public override long LocationPopulation(long maxPop) => NumberBuilder.GetRandomNumber(Math.Min(maxPop, 10000), Math.Min(maxPop, 1000000));
 	public override string LocationPopulationString(long pop, long popSecondary) => NumberBuilder.GetNumberString(pop) + " indentured miners";
 }
+
+public class FarmGenerator : LocationGenerator
+{
+	public override string LocationType => NameBuilder.GetName("FarmType");
+	public override string LocationName => NameBuilder.GetName("Farm");
+	public override long LocationPopulation(long maxPop) => NumberBuilder.GetRandomNumber(Math.Min(maxPop, 100000), Math.Min(maxPop, 1000000));
+	public override string LocationPopulationString(long pop, long popSecondary) => NumberBuilder.GetNumberString(pop) + " serfs";
+}

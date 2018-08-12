@@ -25,6 +25,8 @@ GameObject:
   - component: {fileID: 114965838309469426}
   - component: {fileID: 114787319146375920}
   - component: {fileID: 114539473099598836}
+  - component: {fileID: 114589535510250708}
+  - component: {fileID: 114271363681082860}
   m_Layer: 0
   m_Name: Locations
   m_TagString: Untagged
@@ -64,6 +66,25 @@ MonoBehaviour:
     hold,
 
     vale'
+--- !u!114 &114271363681082860
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1207057535131128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60d82449a6f24a44599f39dd7935712f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TableName: FarmType
+  Names: '{FoodTypes} Farm,
+
+    {FoodTypes} Plantation,
+
+    {FoodAnimalTypes} Farm,
+
+    {FoodAnimalTypes} Ranch'
 --- !u!114 &114360520627540662
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -100,6 +121,25 @@ MonoBehaviour:
     Forge {LatinNouns},
 
     Forge {LatinNouns}'
+--- !u!114 &114589535510250708
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1207057535131128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60d82449a6f24a44599f39dd7935712f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TableName: Farm
+  Names: 'Agri-Complex {Numeral},
+
+    {ObjectAdjective} Fields,
+
+    The {ObjectAdjective} Reach,
+
+    The {LatinAdjective} Heartland'
 --- !u!114 &114787319146375920
 MonoBehaviour:
   m_ObjectHideFlags: 1

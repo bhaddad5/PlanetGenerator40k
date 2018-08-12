@@ -1,6 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class PlanetLocationsData
 {
@@ -58,6 +59,8 @@ public class CivilizedWorldLocationsGenerator : PlanetLocationsGenerator
 	{
 		new HiveCityGenerator(),
 		new CathedralGenerator(),
+		new FarmGenerator(),
+		new MineGenerator(),
 	};
 }
 
@@ -66,7 +69,7 @@ public class AgriWorldLocationsGenerator : PlanetLocationsGenerator
 	public override int NumLocations => 1;
 	protected override List<LocationGenerator> LocationTypes => new List<LocationGenerator>()
 	{
-		new HiveCityGenerator(),
+		new FarmGenerator(),
 		new CathedralGenerator(),
 	};
 }
@@ -101,5 +104,8 @@ public class FeudalWorldLocationsGenerator : PlanetLocationsGenerator
 	protected override List<LocationGenerator> LocationTypes => new List<LocationGenerator>()
 	{
 		new FeudalCastleGenerator(),
+		new FeudalCastleGenerator(),
+		new FeudalCastleGenerator(),
+		new FarmGenerator(),
 	}; 
 }

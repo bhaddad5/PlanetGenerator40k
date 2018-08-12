@@ -18,7 +18,7 @@ public class PlanetRotator : MonoBehaviour
 	// Update is called once per frame
 	void FixedUpdate ()
 	{
-		if (Input.GetKey(KeyCode.Mouse1))
+		if (Input.GetKey(KeyCode.Mouse1) || Input.GetKey(KeyCode.Mouse0))
 		{
 			Vector2 diff = (Vector2)Input.mousePosition - prevMousePos;
 
