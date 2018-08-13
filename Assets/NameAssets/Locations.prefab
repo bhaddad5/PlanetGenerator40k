@@ -186,4 +186,10 @@ MonoBehaviour:
   TableName: Mine
   Names: '{Metals}pit,
 
-    {Metals} Deeps'
+    The {Metals} Deeps,
+
+    The {LatinAdjective} Depths,
+
+    The {LatinAdjective} Deeps,
+
+    The {LatinAdjective} Mines'

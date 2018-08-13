@@ -62,8 +62,7 @@ public class CathedralGenerator : LocationGenerator
 	public override string LocationType => "Cathedral";
 	public override string LocationName => NameBuilder.GetName("Cathedral");
 	public override long LocationPopulation(long maxPop) => NumberBuilder.GetRandomNumber(10000, 20000);
-	public override long LocationPopulationSecondary(long maxPop) => NumberBuilder.GetRandomNumber(500, 5000);
-	public override string LocationPopulationString(long pop, long popSecondary) => NumberBuilder.GetNumberString(pop) + " ministronium priests, " + NumberBuilder.GetNumberString(popSecondary) + " sisters of battle";
+	public override string LocationPopulationString(long pop, long popSecondary) => NumberBuilder.GetNumberString(pop) + " ministronium priests";
 }
 
 public class MineGenerator : LocationGenerator
