@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4861011431018562}
   - component: {fileID: 114360520627540662}
   - component: {fileID: 114843500024112596}
+  - component: {fileID: 114129692213397146}
   - component: {fileID: 114015347041942852}
   - component: {fileID: 114965838309469426}
   - component: {fileID: 114787319146375920}
@@ -59,13 +60,58 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TableName: FeudalLocationSuffix
-  Names: 'haven,
+  Names: 'ton,
+
+    moor,
 
     mont,
 
-    hold,
+    rent,
 
-    vale'
+    eter,
+
+    by,
+
+    nall,
+
+    ford,
+
+    brook,
+
+    field,
+
+    wood,
+
+    ham,
+
+    dun,
+
+    wick,
+
+    well,
+
+    light,
+
+    hall,
+
+    sor,
+
+    ley,
+
+    end'
+--- !u!114 &114129692213397146
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1207057535131128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60d82449a6f24a44599f39dd7935712f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TableName: FeudalLocationPrefix
+  Names: "Lunn,\nBerry,\nMannin,\nHetten,\nStok,\nRusk,\nAn,\nEwer,\nHow,\nSetter,\nSomer,\nWend,\nTorrent,\nComb,\nSlak,\nBrix,\r\nBux,\nWin,\nFur,\nHather"
 --- !u!114 &114271363681082860
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -171,7 +217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TableName: FeudalCastle
-  Names: '{ObjectAdjective}{FeudalLocationSuffix}'
+  Names: '{FeudalLocationPrefix}{FeudalLocationSuffix}'
 --- !u!114 &114965838309469426
 MonoBehaviour:
   m_ObjectHideFlags: 1
