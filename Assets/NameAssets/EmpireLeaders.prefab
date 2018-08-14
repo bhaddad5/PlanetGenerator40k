@@ -89,17 +89,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TableName: GangLeader
-  Names: 'The {Metals} {OrganizationGoalTowardsThing},
+  Names: 'The {Metals} {PersonRole},
 
-    The {OrganizationGoalTowardsThing},
+    The {PersonRole},
 
     {EmpireFirstName},
 
-    {EmpireFirstName} the {OrganizationGoalTowardsThing},
+    {EmpireFirstName} the {PersonRole},
 
-    {EmpireFirstName} the {ObjectAdjective}{OrganizationGoalTowardsThing},
+    {EmpireFirstName} the {ObjectAdjective}{PersonRole},
 
-    {EmpireFirstName} the {Metals}{OrganizationGoalTowardsThing}'
+    {EmpireFirstName} the {Metals}{PersonRole'
 --- !u!114 &114636217120784644
 MonoBehaviour:
   m_ObjectHideFlags: 1

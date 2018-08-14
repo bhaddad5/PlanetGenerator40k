@@ -107,9 +107,9 @@ MonoBehaviour:
 
     {EmpireFirstName}''s {MeleeWeapon}s,
 
-    The {OrganizationGoalTowardsThing}s,
+    The {PersonRole}s,
 
-    The {Metals} {OrganizationGoalTowardsThing}s'
+    The {Metals} {PersonRole}s'
 --- !u!114 &114826250970495688
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -126,7 +126,7 @@ MonoBehaviour:
 
     {FeudalPlanetRuler}''s Levies,
 
-    {OrganizationGoalTowardsThing}s of {FeudalPlanetRuler}'
+    {PersonRole}s of {FeudalPlanetRuler}'
 --- !u!114 &114913883312053218
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TableName: TitanArmy
-  Names: Legio {TitanGroupNames}
+  Names: Legio {LatinAdjective}
 --- !u!114 &114986922833359264
 MonoBehaviour:
   m_ObjectHideFlags: 1

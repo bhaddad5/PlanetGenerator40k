@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 114504027271508786}
   - component: {fileID: 114093436547261186}
   - component: {fileID: 114621404786815552}
+  - component: {fileID: 114464997857922910}
   m_Layer: 0
   m_Name: Nouns
   m_TagString: Untagged
@@ -92,6 +93,33 @@ MonoBehaviour:
     Axe,
 
     Blade'
+--- !u!114 &114464997857922910
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1469782456760696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60d82449a6f24a44599f39dd7935712f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TableName: PersonRole
+  Names: 'Sword,
+
+    Defender,
+
+    Protector,
+
+    Guardian,
+
+    Reclaimer,
+
+    Explorator,
+
+    Oppressor,
+
+    Loyalist'
 --- !u!114 &114504027271508786
 MonoBehaviour:
   m_ObjectHideFlags: 1
