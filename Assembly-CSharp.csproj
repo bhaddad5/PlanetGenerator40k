@@ -100,6 +100,7 @@
     <Compile Include="Assets\External Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\External Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\Planet Data\Planet Data.cs" />
+    <Compile Include="Assets\Planet Data\PlanetDistrict.cs" />
     <Compile Include="Assets\PlanetAuthoring\BiomeGenerator.cs" />
     <Compile Include="Assets\PlanetAuthoring\Helpers.cs" />
     <Compile Include="Assets\PlanetAuthoring\PlanetAuthor.cs" />
