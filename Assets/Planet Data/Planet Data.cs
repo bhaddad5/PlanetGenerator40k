@@ -7,12 +7,14 @@ using UnityEngine;
 public class PlanetData
 {
 	public string Name;
+	public string Destription;
 }
 
 [Serializable]
 public class PlanetLocation
 {
 	public string Name;
+	public string Destription;
 }
 
 [Serializable]

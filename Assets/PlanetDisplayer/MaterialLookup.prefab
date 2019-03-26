@@ -51,10 +51,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebc5975faf8bb164a9999ad930ac6057, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Arid: {fileID: 2100000, guid: 64ab8835ac25df24da18c8f409f31979, type: 2}
-  Arctic: {fileID: 2100000, guid: f16ca0bbb448d1147ad98623628363e9, type: 2}
-  Continental: {fileID: 2100000, guid: 841865685f1862d41a20844fbafb8135, type: 2}
-  Desert: {fileID: 2100000, guid: a6205b54b9603514e9095f42e93fd5bc, type: 2}
-  Dead: {fileID: 2100000, guid: 834b366ba1382e646b9928c31a44f75e, type: 2}
-  Jungle: {fileID: 2100000, guid: ff6b201a061a9a04fb031b93edb06a22, type: 2}
-  Molten: {fileID: 2100000, guid: 84ccdc3323cf4c94cbb809d4426d6b99, type: 2}
+  HeightsSpiral:
+    Heights: {fileID: 2800000, guid: e1d5760e392fb8c4b85e2d76dc191f3d, type: 3}
+    HeightsNormal: {fileID: 2800000, guid: 44f923ec148353e4894a5151fda04697, type: 3}
+  HeightsRegular:
+    Heights: {fileID: 2800000, guid: b1fd50eb6e88231458eaffc1a50c6dff, type: 3}
+    HeightsNormal: {fileID: 2800000, guid: c4977103604bb0f4c8b1888601ad7099, type: 3}
+  HeightsContinental:
+    Heights: {fileID: 2800000, guid: 710d0a0567d839e4bbb807618632abd8, type: 3}
+    HeightsNormal: {fileID: 2800000, guid: ed8c64dce9fcf2c41ab4d3af06a89205, type: 3}
+  HeightsCraters:
+    Heights: {fileID: 2800000, guid: fc7723474b896794e981856dfbce1e4a, type: 3}
+    HeightsNormal: {fileID: 2800000, guid: 9e0e2a39848744b47a7881ab98370539, type: 3}
+  HeightsHigher:
+    Heights: {fileID: 2800000, guid: 89840a926dd1bf94d8667aa16530eb4a, type: 3}
+    HeightsNormal: {fileID: 2800000, guid: e1eac731dbbafbe40ab19b38d9ac86d9, type: 3}
+  DetailsFlatter: {fileID: 2800000, guid: 47805e76a94cbbc469734f603d6b96a7, type: 3}
+  DetailsRegular: {fileID: 2800000, guid: f3c285f93c3b1b64e912820c79dfa8a5, type: 3}
+  AridLightBrown: {r: 0.2735849, g: 0.1882353, b: 0, a: 0}
+  AridDarkBrown: {r: 0.14150941, g: 0.09793576, b: 0, a: 0}
+  AridMediumBrown: {r: 0.16037738, g: 0.10901873, b: 0, a: 0}
+  DesertYellow: {r: 0.23584908, g: 0.2303357, b: 0, a: 0}
+  DesertWhite: {r: 0.29059505, g: 0.2924528, b: 0.15588287, a: 0}
+  JungleLightGreen: {r: 0, g: 0.1509434, b: 0.011285027, a: 0}
+  JungleDarkGreen: {r: 0, g: 0.14150941, b: 0.0019133089, a: 0}
+  ArcticWhite: {r: 0.9575472, g: 0.99671465, b: 1, a: 0}
+  ArcticBluishWhite: {r: 0.3003738, g: 0.45186454, b: 0.4716981, a: 0}
+  PlainsGreenish: {r: 0.15576929, g: 0.31132078, b: 0.08076719, a: 0}
+  PlainsYellowish: {r: 0.2303243, g: 0.2924528, b: 0.09242612, a: 0}
+  AlpineForest: {r: 0.027367385, g: 0.14150941, b: 0.03852653, a: 0}
+  MoltonAshDark: {r: 0, g: 0, b: 0, a: 0}
+  MoltonAshLight: {r: 0, g: 0, b: 0, a: 0}
+  DeadGray: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 0}
+  DeadRust: {r: 0.13333334, g: 0.08235294, b: 0.08235294, a: 0}
+  LightBlueWater: {r: 0, g: 0.031863157, b: 0.38679248, a: 0}
+  DarkBlueWater: {r: 0, g: 0.01952633, b: 0.103773594, a: 0}
+  LightLava: {r: 0.6886792, g: 0.14709653, b: 0, a: 0}
+  DarkLava: {r: 0.3301887, g: 0.004672473, b: 0.004672473, a: 0}
+  LightAtmosphere: {r: 0.50534, g: 0.61160165, b: 0.6415094, a: 0}
+  LavaAtmosphere: {r: 0.6037736, g: 0.11853222, b: 0, a: 0}

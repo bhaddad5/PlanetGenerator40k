@@ -1,0 +1,1 @@
+{"Description":"Desert","Heights":1,"Details":0,"FrostLevel":0.030134301632642747,"WaterLevel":0.5854251384735107,"VegitationColor":3,"WaterColor":0,"AtmosphereColor":0,"EmissiveWater":false,"Size":0.4802058935165405,"Seed":724}
