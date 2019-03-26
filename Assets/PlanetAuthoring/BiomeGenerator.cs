@@ -2,36 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BiomeData
-{
-	public string Description;
-	public PlanetAssetLookup.PlanetTextures Heights;
-	public PlanetAssetLookup.DetailsTextures Details;
-	public float FrostLevel;
-	public float WaterLevel;
-	public PlanetAssetLookup.VegitationColors VegitationColor;
-	public PlanetAssetLookup.WaterColors WaterColor;
-	public PlanetAssetLookup.AtmosphereColors AtmosphereColor;
-	public bool EmissiveWater;
-	public float Size;
-	public int Seed;
-
-	public BiomeData(BiomeGenerator generator)
-	{
-		Description = generator.Descriptor;
-		Heights = generator.GetHeights;
-		Details = generator.GetDetails;
-		FrostLevel = generator.FrostLevel;
-		WaterLevel = generator.WaterLevel;
-		VegitationColor = generator.GetVegitationColor;
-		WaterColor = generator.GetWaterColor;
-		AtmosphereColor = generator.GetAtmosphereColor;
-		EmissiveWater = generator.EmissiveWater;
-		Size = generator.Size;
-		Seed = generator.Seed;
-	}
-}
-
 public abstract class BiomeGenerator
 {
 	protected float fullFrost = .34f;
@@ -52,6 +22,24 @@ public abstract class BiomeGenerator
 	public virtual PlanetAssetLookup.WaterColors GetWaterColor => Helpers.Oneof(PlanetAssetLookup.WaterColors.LightBlueWater, PlanetAssetLookup.WaterColors.DarkBlueWater);
 	public virtual PlanetAssetLookup.AtmosphereColors GetAtmosphereColor => Helpers.Oneof(PlanetAssetLookup.AtmosphereColors.LightAtmosphere);
 	public int Seed => Random.Range(0, 1000);
+
+	public BiomeData GenerateBiome()
+	{
+		return new BiomeData()
+		{
+			Description = Descriptor,
+			Heights = GetHeights,
+			Details = GetDetails,
+			FrostLevel = FrostLevel,
+			WaterLevel = WaterLevel,
+			VegitationColor = GetVegitationColor,
+			WaterColor = GetWaterColor,
+			AtmosphereColor = GetAtmosphereColor,
+			EmissiveWater = EmissiveWater,
+			Size = Size,
+			Seed = Seed,
+	};
+	}
 }
 
 public class Continental : BiomeGenerator

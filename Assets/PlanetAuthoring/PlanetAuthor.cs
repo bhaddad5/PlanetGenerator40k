@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlanetBuilder : MonoBehaviour
+public class PlanetAuthor : MonoBehaviour
 {
 	public PlanetInfoDisplayer PlanetDisplayer;
 
@@ -32,7 +32,7 @@ public class PlanetBuilder : MonoBehaviour
 
 	private BiomeData GetPlanet()
 	{
-		return new BiomeData(PlanetTypes[Random.Range(0, PlanetTypes.Count)]);
+		return PlanetTypes[Random.Range(0, PlanetTypes.Count)].GenerateBiome();
 	}
 	
 }
