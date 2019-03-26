@@ -44,7 +44,6 @@ public class PlanetVisualDisplayController : MonoBehaviour
 		planet.LiquidColor = MatLookup.GetWaterColor(biome.WaterColor);
 		planet.EmissiveWater = biome.EmissiveWater;
 		planet.Size = biome.Size;
-
-		GetComponent<HPlanet>().RandomSeed = Random.Range(0, 1000);
+		planet.RandomSeed = biome.Seed;
 	}
 }

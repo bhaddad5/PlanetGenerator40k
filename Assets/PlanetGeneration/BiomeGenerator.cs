@@ -14,6 +14,7 @@ public class BiomeData
 	public PlanetAssetLookup.AtmosphereColors AtmosphereColor;
 	public bool EmissiveWater;
 	public float Size;
+	public int Seed;
 
 	public BiomeData(BiomeGenerator generator)
 	{
@@ -27,6 +28,7 @@ public class BiomeData
 		AtmosphereColor = generator.GetAtmosphereColor;
 		EmissiveWater = generator.EmissiveWater;
 		Size = generator.Size;
+		Seed = generator.Seed;
 	}
 }
 
@@ -49,7 +51,7 @@ public abstract class BiomeGenerator
 	public virtual PlanetAssetLookup.VegitationColors GetVegitationColor => Helpers.Oneof(PlanetAssetLookup.VegitationColors.AridDarkBrown);
 	public virtual PlanetAssetLookup.WaterColors GetWaterColor => Helpers.Oneof(PlanetAssetLookup.WaterColors.LightBlueWater, PlanetAssetLookup.WaterColors.DarkBlueWater);
 	public virtual PlanetAssetLookup.AtmosphereColors GetAtmosphereColor => Helpers.Oneof(PlanetAssetLookup.AtmosphereColors.LightAtmosphere);
-	
+	public int Seed => Random.Range(0, 1000);
 }
 
 public class Continental : BiomeGenerator

@@ -13,24 +13,26 @@ public class PlanetBuilder : MonoBehaviour
 
 	public void GeneratePlanet()
 	{
-		PlanetData planetData = GetPlanet();
+		BiomeData planetData = GetPlanet();
 
 		PlanetDisplayer.DisplayPlanet(planetData);
 	}
 
-	private List<PlanetDataGenerator> PlanetTypes = new List<PlanetDataGenerator>()
+	private List<BiomeGenerator> PlanetTypes = new List<BiomeGenerator>()
 	{
-		new HiveWorld(),
-		new AgriWorld(),
-		new CivilizedWorld(),
-		new FeudalWorld(),
-		new ForgeWorld(),
-		new MiningWorld(),
+		new Continental(),
+		new Arid(),
+		new Jungle(),
+		new Desert(),
+		new Arctic(),
+		new Alpine(),
+		new Dead(),
+		new Molten(),
 	};
 
-	private PlanetData GetPlanet()
+	private BiomeData GetPlanet()
 	{
-		return new PlanetData(PlanetTypes[Random.Range(0, PlanetTypes.Count)]);
+		return new BiomeData(PlanetTypes[Random.Range(0, PlanetTypes.Count)]);
 	}
 	
 }
