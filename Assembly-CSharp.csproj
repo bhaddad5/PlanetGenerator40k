@@ -60,11 +60,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\External Assets\External Planet Shader\Demo\Scripts\ColorPicker.cs" />
-    <Compile Include="Assets\External Assets\External Planet Shader\Demo\Scripts\GradSprite.cs" />
-    <Compile Include="Assets\External Assets\External Planet Shader\Demo\Scripts\MouseOrbitImproved.cs" />
-    <Compile Include="Assets\External Assets\External Planet Shader\Demo\Scripts\PlanetManager.cs" />
-    <Compile Include="Assets\External Assets\External Planet Shader\Demo\Scripts\Rotate.cs" />
     <Compile Include="Assets\External Assets\External Planet Shader\scripts\HPlanet.cs" />
     <Compile Include="Assets\External Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\External Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
@@ -134,7 +129,6 @@
     <None Include="Assets\External Assets\External Planet Shader\Shaders\Planet Simp.shader" />
     <None Include="Assets\External Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\External Assets\External Planet Shader\Shaders\Atmosphere.shader" />
-    <None Include="Assets\External Assets\External Planet Shader\Textures\Generators\Warning for mobiles.txt" />
     <None Include="Assets\External Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\External Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\External Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
