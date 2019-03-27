@@ -13,11 +13,6 @@ public class PlanetAuthor : MonoBehaviour
 
 	private BiomeData currentBiomeData;
 
-	void Start()
-	{
-		GeneratePlanet();
-	}
-
 	public void GeneratePlanet()
 	{
 		currentBiomeData = GetPlanet();
@@ -31,6 +26,21 @@ public class PlanetAuthor : MonoBehaviour
 		file.Close();
 		string biomeJson = JsonUtility.ToJson(currentBiomeData);
 		File.WriteAllText(newPath, biomeJson);
+	}
+
+	public GameObject Cursor;
+	public Camera MainCamera;
+
+
+	public GameObject TmpPlacementPrefab;
+	public void Update()
+	{
+		var ray = MainCamera.ScreenPointToRay(Input.mousePosition);
+		RaycastHit hit;
+		if (Physics.Raycast(ray, out hit))
+		{
+			Cursor.transform.position = hit.point;
+		}
 	}
 
 	private BiomeData GetPlanet()

@@ -2,10 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlanetRotator : MonoBehaviour
+public class CameraControls : MonoBehaviour
 {
-	public Camera Camera;
-
 	private Vector2 prevMousePos;
 
 	private const float rotSpeed = .2f;
@@ -16,14 +14,17 @@ public class PlanetRotator : MonoBehaviour
 	}
 
 	// Update is called once per frame
-	void FixedUpdate ()
+	void FixedUpdate()
 	{
+		var d = Input.GetAxis("Mouse ScrollWheel");
+		transform.position += transform.forward * d;
+
 		if (Input.GetKey(KeyCode.Mouse1) || Input.GetKey(KeyCode.Mouse0))
 		{
 			Vector2 diff = (Vector2)Input.mousePosition - prevMousePos;
 
-			Camera.transform.RotateAround(transform.position, new Vector3(0, 1, 0), diff.x * rotSpeed);
-			Camera.transform.RotateAround(transform.position, Camera.transform.right, -diff.y * rotSpeed);
+			transform.RotateAround(Vector3.zero, new Vector3(0, 1, 0), diff.x * rotSpeed);
+			transform.RotateAround(Vector3.zero, transform.right, -diff.y * rotSpeed);
 		}
 
 		prevMousePos = Input.mousePosition;
