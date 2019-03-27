@@ -19,7 +19,7 @@ public class CameraControls : MonoBehaviour
 		var d = Input.GetAxis("Mouse ScrollWheel");
 		transform.position += transform.forward * d;
 
-		if (Input.GetKey(KeyCode.Mouse1) || Input.GetKey(KeyCode.Mouse0))
+		if (Input.GetKey(KeyCode.Mouse1))
 		{
 			Vector2 diff = (Vector2)Input.mousePosition - prevMousePos;
 

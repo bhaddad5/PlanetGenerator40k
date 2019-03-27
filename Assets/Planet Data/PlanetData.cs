@@ -6,15 +6,35 @@ using UnityEngine;
 [Serializable]
 public class PlanetData
 {
-	public string Name;
-	public string Destription;
+	public string Id;
+	public bool Moon;
+	public BiomeData BiomeData;
+	public PlanetGeoData GeoData;
+	public List<PlanetDistrictData> Districts;
+	public List<PlanetObjectData> Objects;
 }
 
 [Serializable]
-public class PlanetLocation
+public class PlanetDistrictData
 {
-	public string Name;
-	public string Destription;
+	public string Id;
+	public Vector3 AngleToDistrict;
+	public string DistrictTypeId;
+	public int DistrictLevel;
+}
+
+[Serializable]
+public class PlanetObjectData
+{
+	public string ObjectId;
+	public Vector3 AngleToObject;
+}
+
+[Serializable]
+public class PlanetGeoData
+{
+	public float Size = 1f;
+	public float RotationSpeed = 1f;
 }
 
 [Serializable]

@@ -6,17 +6,24 @@ using UnityEngine;
 
 public class PlanetAuthor : MonoBehaviour
 {
-	public PlanetInfoDisplayer PlanetDisplayer;
+	public PlanetVisualizer PlanetPrefab;
+	private PlanetVisualizer currPlanet;
 
-	public TMP_Dropdown Dropdown;
+	public TMP_Dropdown BiomeDropdown;
 	public TMP_InputField NameInputField;
 
-	private BiomeData currentBiomeData;
+	private PlanetData currentPlanetData;
 
 	public void GeneratePlanet()
 	{
-		currentBiomeData = GetPlanet();
-		PlanetDisplayer.DisplayPlanet(currentBiomeData);
+		if(currPlanet != null)
+			GameObject.Destroy(currPlanet.gameObject);
+
+		currentPlanetData = new PlanetData();
+		currentPlanetData.BiomeData = GetPlanet();
+
+		currPlanet = GameObject.Instantiate(PlanetPrefab);
+		currPlanet.Setup(currentPlanetData);
 	}
 
 	public void SavePlanet()
@@ -24,15 +31,14 @@ public class PlanetAuthor : MonoBehaviour
 		string newPath = Path.Combine(Application.streamingAssetsPath, Path.Combine("Planets", NameInputField.text)) + ".txt";
 		var file = File.Create(newPath);
 		file.Close();
-		string biomeJson = JsonUtility.ToJson(currentBiomeData);
-		File.WriteAllText(newPath, biomeJson);
+		string planetJson = JsonUtility.ToJson(currentPlanetData);
+		File.WriteAllText(newPath, planetJson);
 	}
 
 	public GameObject Cursor;
 	public Camera MainCamera;
-
-
 	public GameObject TmpPlacementPrefab;
+
 	public void Update()
 	{
 		var ray = MainCamera.ScreenPointToRay(Input.mousePosition);
@@ -40,12 +46,20 @@ public class PlanetAuthor : MonoBehaviour
 		if (Physics.Raycast(ray, out hit))
 		{
 			Cursor.transform.position = hit.point;
+
+			if (Input.GetKeyDown(KeyCode.Mouse0))
+			{
+				var tmpObject = GameObject.Instantiate(TmpPlacementPrefab, currPlanet.transform.GetChild(0));
+				tmpObject.transform.position = hit.point;
+				tmpObject.transform.LookAt(currPlanet.transform.GetChild(0));
+				tmpObject.transform.eulerAngles += new Vector3(-90, 0, 0);
+			}
 		}
 	}
 
 	private BiomeData GetPlanet()
 	{
-		string dropdownVal = Dropdown.options[Dropdown.value].text;
+		string dropdownVal = BiomeDropdown.options[BiomeDropdown.value].text;
 		BiomeGenerator biomeGen = new Continental();
 		if (dropdownVal == "Continental")
 			biomeGen = new Continental();
