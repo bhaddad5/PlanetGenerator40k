@@ -23,6 +23,7 @@ public class PlanetAuthor : MonoBehaviour
 			GameObject.Destroy(currPlanet.gameObject);
 
 		currentPlanetData = new PlanetData();
+		currentPlanetData.Id = NameInputField.text;
 		currentPlanetData.BiomeData = GetPlanet();
 
 		float size = Single.Parse(SizeInputField.text);
@@ -36,7 +37,7 @@ public class PlanetAuthor : MonoBehaviour
 
 	public void SavePlanet()
 	{
-		string newPath = Path.Combine(Application.streamingAssetsPath, Path.Combine("Planets", NameInputField.text)) + ".txt";
+		string newPath = Path.Combine(Application.streamingAssetsPath, Path.Combine("Planets", currentPlanetData.Id)) + ".txt";
 		var file = File.Create(newPath);
 		file.Close();
 		string planetJson = JsonUtility.ToJson(currentPlanetData);

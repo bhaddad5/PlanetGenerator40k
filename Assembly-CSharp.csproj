@@ -109,6 +109,7 @@
     <Compile Include="Assets\PlanetDisplayer\PlanetAssetLookup.cs" />
     <Compile Include="Assets\PlanetDisplayer\PlanetRotator.cs" />
     <Compile Include="Assets\PlanetDisplayer\PlanetVisualizer.cs" />
+    <Compile Include="Assets\PlanetDisplayer\Star\StarLightHandler.cs" />
     <None Include="Assets\External Assets\External Planet Shader\Shaders\Planet.shader" />
     <None Include="Assets\External Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\External Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
