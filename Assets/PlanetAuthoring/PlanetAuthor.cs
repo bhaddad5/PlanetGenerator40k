@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using TMPro;
@@ -11,6 +12,8 @@ public class PlanetAuthor : MonoBehaviour
 
 	public TMP_Dropdown BiomeDropdown;
 	public TMP_InputField NameInputField;
+	public TMP_InputField SizeInputField;
+	public TMP_InputField RotSpeedInputField;
 
 	private PlanetData currentPlanetData;
 
@@ -21,6 +24,11 @@ public class PlanetAuthor : MonoBehaviour
 
 		currentPlanetData = new PlanetData();
 		currentPlanetData.BiomeData = GetPlanet();
+
+		float size = Single.Parse(SizeInputField.text);
+		float rotSpeed = Single.Parse(RotSpeedInputField.text);
+
+		currentPlanetData.GeoData = new PlanetGeoData(){RotationSpeed = rotSpeed, Size = size};
 
 		currPlanet = GameObject.Instantiate(PlanetPrefab);
 		currPlanet.Setup(currentPlanetData);
@@ -49,7 +57,8 @@ public class PlanetAuthor : MonoBehaviour
 
 			if (Input.GetKeyDown(KeyCode.Mouse0))
 			{
-				var tmpObject = GameObject.Instantiate(TmpPlacementPrefab, currPlanet.transform.GetChild(0));
+				var tmpObject = GameObject.Instantiate(TmpPlacementPrefab);
+				tmpObject.transform.SetParent(currPlanet.transform.GetChild(0));
 				tmpObject.transform.position = hit.point;
 				tmpObject.transform.LookAt(currPlanet.transform.GetChild(0));
 				tmpObject.transform.eulerAngles += new Vector3(-90, 0, 0);

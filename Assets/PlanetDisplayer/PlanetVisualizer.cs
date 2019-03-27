@@ -11,6 +11,13 @@ public class PlanetVisualizer : MonoBehaviour
 		biomeVis = transform.GetChild(0).GetComponent<HPlanet>();
 		SetupDefaultBiomeValues();
 		SetupBiome(data.BiomeData);
+		SetupGeoData(data.GeoData);
+	}
+
+	private void SetupGeoData(PlanetGeoData data)
+	{
+		biomeVis.GetComponent<PlanetRotator>().RotationSpeed = data.RotationSpeed;
+		biomeVis.transform.localScale = Vector3.one * data.Size;
 	}
 
 	//Setup values that won't change
@@ -32,17 +39,17 @@ public class PlanetVisualizer : MonoBehaviour
 		biomeVis.AtmosphereBrightness = .05f;
 	}
 
-	[SerializeField] private PlanetAssetLookup MatLookup;
 	private void SetupBiome(BiomeData biome)
 	{
-		biomeVis.HeightMap = MatLookup.GetPlanetTexture(biome.Heights).Heights;
-		biomeVis.NormalsMap = MatLookup.GetPlanetTexture(biome.Heights).HeightsNormal;
-		biomeVis.DetailsMap = MatLookup.GetDetailsTexture(biome.Details);
+		var matLookup = AssetLookup.Instance.PlanetAssetLookup;
+		biomeVis.HeightMap = matLookup.GetPlanetTexture(biome.Heights).Heights;
+		biomeVis.NormalsMap = matLookup.GetPlanetTexture(biome.Heights).HeightsNormal;
+		biomeVis.DetailsMap = matLookup.GetDetailsTexture(biome.Details);
 		biomeVis.Frost = biome.FrostLevel;
 		biomeVis.WaterLevel = biome.WaterLevel;
-		biomeVis.VegetationColor = MatLookup.GetVegitationColor(biome.VegitationColor);
-		biomeVis.AtmosphereColor = MatLookup.GetAtmosphereColor(biome.AtmosphereColor);
-		biomeVis.LiquidColor = MatLookup.GetWaterColor(biome.WaterColor);
+		biomeVis.VegetationColor = matLookup.GetVegitationColor(biome.VegitationColor);
+		biomeVis.AtmosphereColor = matLookup.GetAtmosphereColor(biome.AtmosphereColor);
+		biomeVis.LiquidColor = matLookup.GetWaterColor(biome.WaterColor);
 		biomeVis.EmissiveWater = biome.EmissiveWater;
 		biomeVis.Size = biome.Size;
 		biomeVis.RandomSeed = biome.Seed;

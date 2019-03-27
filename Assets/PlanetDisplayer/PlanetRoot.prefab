@@ -19,12 +19,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4152464606546748}
-  - component: {fileID: 114233206117836888}
   - component: {fileID: 33042088300488712}
   - component: {fileID: 23259280430492274}
-  - component: {fileID: 114114144843004710}
   - component: {fileID: 114395379863770748}
   - component: {fileID: 64767895129055558}
+  - component: {fileID: 114293751850443154}
   m_Layer: 0
   m_Name: Planet
   m_TagString: Untagged
@@ -204,7 +203,7 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300002, guid: c26f7062dd385b44c82391b5199d5372, type: 3}
---- !u!114 &114114144843004710
+--- !u!114 &114293751850443154
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -212,21 +211,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1167149080783156}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8876e32e6b444e648aeb14c4ccc8c031, type: 3}
+  m_Script: {fileID: 11500000, guid: a76384c6e3569b1459dc332eb7d870f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114233206117836888
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1167149080783156}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a5ea643110a7f64bbace40fb71e3ae0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MatLookup: {fileID: 0}
+  RotationSpeed: 1
 --- !u!114 &114395379863770748
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -321,5 +309,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a5ea643110a7f64bbace40fb71e3ae0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MatLookup: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
-    type: 2}
