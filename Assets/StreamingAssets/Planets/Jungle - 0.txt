@@ -1,0 +1,1 @@
+{"Id":"Jungle - 0","Moon":false,"BiomeData":{"Description":"Jungle","Heights":1,"Details":1,"FrostLevel":0.05818811058998108,"WaterLevel":0.6869735717773438,"VegitationColor":5,"WaterColor":1,"AtmosphereColor":0,"EmissiveWater":false,"Size":0.6411691308021545,"Seed":518},"GeoData":{"Size":0.800000011920929,"RotationSpeed":1.0},"Districts":[],"Objects":[]}

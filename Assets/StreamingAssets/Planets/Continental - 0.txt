@@ -1,0 +1,1 @@
+{"Id":"Continental - 0","Moon":false,"BiomeData":{"Description":"Continental","Heights":2,"Details":1,"FrostLevel":0.11529774218797684,"WaterLevel":0.668793797492981,"VegitationColor":10,"WaterColor":1,"AtmosphereColor":0,"EmissiveWater":false,"Size":0.5932922959327698,"Seed":798},"GeoData":{"Size":1.2999999523162842,"RotationSpeed":1.0},"Districts":[],"Objects":[]}
