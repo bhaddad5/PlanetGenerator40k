@@ -14,7 +14,9 @@ public class CameraControls : MonoBehaviour
 	// Update is called once per frame
 	void FixedUpdate()
 	{
-		var d = Input.GetAxis("Mouse ScrollWheel");
+		float heightSpeedAdjuster = Mathf.Min(Mathf.Max(transform.position.y, .4f), 10f);
+
+		var d = Input.GetAxis("Mouse ScrollWheel") * heightSpeedAdjuster;
 		transform.position += transform.forward * d;
 
 		if (Input.GetKey(KeyCode.Mouse1))
@@ -24,6 +26,20 @@ public class CameraControls : MonoBehaviour
 			transform.RotateAround(Vector3.zero, new Vector3(0, 1, 0), diff.x * rotSpeed);
 			transform.RotateAround(Vector3.zero, transform.right, -diff.y * rotSpeed);
 		}
+
+		float wasdSpeed = .1f * heightSpeedAdjuster;
+
+		Vector3 camFlatForward = transform.forward;
+		camFlatForward.y = 0;
+
+		if (Input.GetKey(KeyCode.W))
+			transform.position += camFlatForward * wasdSpeed;
+		if (Input.GetKey(KeyCode.A))
+			transform.position -= transform.right * wasdSpeed;
+		if (Input.GetKey(KeyCode.S))
+			transform.position -= camFlatForward * wasdSpeed;
+		if (Input.GetKey(KeyCode.D))
+			transform.position += transform.right * wasdSpeed;
 
 		prevMousePos = Input.mousePosition;
 	}
