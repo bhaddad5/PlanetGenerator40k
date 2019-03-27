@@ -1,0 +1,1 @@
+{"Id":"Desert Moon - 0","Moon":true,"BiomeData":{"Description":"Desert","Heights":1,"Details":0,"FrostLevel":0.039337463676929477,"WaterLevel":0.5774797797203064,"VegitationColor":4,"WaterColor":0,"AtmosphereColor":0,"EmissiveWater":false,"Size":0.31715136766433718,"Seed":365},"GeoData":{"Size":0.30000001192092898,"RotationSpeed":0.699999988079071},"Districts":[],"Objects":[]}

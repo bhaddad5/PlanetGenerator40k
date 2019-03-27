@@ -1,0 +1,1 @@
+{"Id":"Dead Moon - 0","Moon":true,"BiomeData":{"Description":"Dead","Heights":3,"Details":0,"FrostLevel":0.07151652872562409,"WaterLevel":0.0,"VegitationColor":12,"WaterColor":1,"AtmosphereColor":0,"EmissiveWater":false,"Size":0.10000000149011612,"Seed":429},"GeoData":{"Size":0.30000001192092898,"RotationSpeed":1.0},"Districts":[],"Objects":[]}

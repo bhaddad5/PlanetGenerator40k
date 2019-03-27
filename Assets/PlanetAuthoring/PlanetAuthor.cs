@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlanetAuthor : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class PlanetAuthor : MonoBehaviour
 	public TMP_InputField NameInputField;
 	public TMP_InputField SizeInputField;
 	public TMP_InputField RotSpeedInputField;
+	public Toggle IsMoon;
 
 	private PlanetData currentPlanetData;
 
@@ -24,6 +26,7 @@ public class PlanetAuthor : MonoBehaviour
 
 		currentPlanetData = new PlanetData();
 		currentPlanetData.Id = NameInputField.text;
+		currentPlanetData.Moon = IsMoon.isOn;
 		currentPlanetData.BiomeData = GetPlanet();
 
 		float size = Single.Parse(SizeInputField.text);

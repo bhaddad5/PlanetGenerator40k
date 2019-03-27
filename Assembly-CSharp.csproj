@@ -95,6 +95,7 @@
     <Compile Include="Assets\External Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\External Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\Interactions\CameraControls.cs" />
+    <Compile Include="Assets\MainGame\SystemGenerator.cs" />
     <Compile Include="Assets\Planet Data\PlanetData.cs" />
     <Compile Include="Assets\Planet Data\PlanetDistrict.cs" />
     <Compile Include="Assets\PlanetAuthoring\BiomeGenerator.cs" />
@@ -112,9 +113,9 @@
     <None Include="Assets\External Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\External Assets\External Planet Shader\Shaders\Ring.shader" />
     <None Include="Assets\External Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\StreamingAssets\Planets\Alpine 0.txt" />
     <None Include="Assets\External Assets\External Planet Shader\Shaders\SpaceSky.shader" />
     <None Include="Assets\External Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
-    <None Include="Assets\StreamingAssets\Planets\Full Desert 1.txt" />
     <None Include="Assets\External Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\External Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\External Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
@@ -125,6 +126,7 @@
     <None Include="Assets\External Assets\External Planet Shader\Shaders\Planet Static.shader" />
     <None Include="Assets\External Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\External Assets\TextMesh Pro\Examples &amp; Extras\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\StreamingAssets\Planets\Dead Moon - 0.txt" />
     <None Include="Assets\External Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\External Assets\External Planet Shader\Shaders\Planet Simp.shader" />
     <None Include="Assets\External Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
@@ -135,6 +137,7 @@
     <None Include="Assets\External Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\External Assets\External Planet Shader\Shaders\GasGiant.shader" />
     <None Include="Assets\External Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\StreamingAssets\Planets\Desert Moon - 0.txt" />
     <None Include="Assets\External Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\External Assets\External Planet Shader\Shaders\ColorPicker.shader" />
     <Reference Include="UnityEditor.StandardEvents">

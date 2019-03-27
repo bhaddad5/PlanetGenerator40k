@@ -1,0 +1,1 @@
+{"Id":"Alpine 0","Moon":false,"BiomeData":{"Description":"Alpine","Heights":2,"Details":0,"FrostLevel":0.16782937943935395,"WaterLevel":0.7275900840759277,"VegitationColor":11,"WaterColor":0,"AtmosphereColor":0,"EmissiveWater":false,"Size":0.37322378158569338,"Seed":611},"GeoData":{"Size":1.0,"RotationSpeed":1.0},"Districts":[],"Objects":[]}
