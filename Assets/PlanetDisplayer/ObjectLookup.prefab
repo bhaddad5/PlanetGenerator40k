@@ -9,30 +9,30 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1709629812457504}
+  m_RootGameObject: {fileID: 1842979429487094}
   m_IsPrefabAsset: 1
---- !u!1 &1709629812457504
+--- !u!1 &1842979429487094
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4424220645760850}
-  - component: {fileID: 114164611443827672}
+  - component: {fileID: 4312873364078122}
+  - component: {fileID: 114868102116806330}
   m_Layer: 0
-  m_Name: AssetLookup
+  m_Name: ObjectLookup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4424220645760850
+--- !u!4 &4312873364078122
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1709629812457504}
+  m_GameObject: {fileID: 1842979429487094}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -40,18 +40,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114164611443827672
+--- !u!114 &114868102116806330
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1709629812457504}
+  m_GameObject: {fileID: 1842979429487094}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24987d19afae9b743b9cbdfe75cad6f4, type: 3}
+  m_Script: {fileID: 11500000, guid: 6eaa57e8137fb7d4faa53e9aa98bb96f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaterialLookup: {fileID: 114505831188212820, guid: e10f7ad0d5778f04695a7e270e426b54,
-    type: 2}
-  ObjectLookup: {fileID: 114868102116806330, guid: e16fcae3af49d4247aa88634a3717e06,
-    type: 2}
+  PineForests:
+  - {fileID: 1693418097504448, guid: d7c1d0193e17f0e4787fa2996b9007e3, type: 2}
+  HiveCity0:
+  - {fileID: 1553114919354940, guid: e1e8cbb60c1307c4b8b3c6debe93c152, type: 2}
+  Refinery0:
+  - {fileID: 1622911966855098, guid: cc6a1eb7779450942892d48d5ef90970, type: 2}

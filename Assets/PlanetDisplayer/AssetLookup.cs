@@ -9,7 +9,8 @@ public class AssetLookup : MonoBehaviour
 {
 	public static AssetLookup Instance;
 
-	public PlanetAssetLookup PlanetAssetLookup;
+	public MaterialLookup MaterialLookup;
+	public ObjectLookup ObjectLookup;
 
 	void Awake()
 	{

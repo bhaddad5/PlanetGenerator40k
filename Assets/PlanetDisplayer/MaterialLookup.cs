@@ -8,7 +8,7 @@ public class TexNormalPair
 	[SerializeField] public Texture HeightsNormal;
 }
 
-public class PlanetAssetLookup : MonoBehaviour
+public class MaterialLookup : MonoBehaviour
 {
 	[Header("Heights")]
 	[SerializeField] private TexNormalPair HeightsSpiral;

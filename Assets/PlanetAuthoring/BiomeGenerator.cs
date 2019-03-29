@@ -16,11 +16,11 @@ public abstract class BiomeGenerator
 	public virtual float WaterLevel => Random.Range(noWater, regularWater);
 	public virtual float Size => Random.Range(.25f, .65f);
 
-	public virtual PlanetAssetLookup.PlanetTextures GetHeights => Helpers.Oneof(PlanetAssetLookup.PlanetTextures.HeightsContinental);
-	public virtual PlanetAssetLookup.DetailsTextures GetDetails => Helpers.Oneof(PlanetAssetLookup.DetailsTextures.DetailsFlatter, PlanetAssetLookup.DetailsTextures.DetailsRegular);
-	public virtual PlanetAssetLookup.VegitationColors GetVegitationColor => Helpers.Oneof(PlanetAssetLookup.VegitationColors.AridDarkBrown);
-	public virtual PlanetAssetLookup.WaterColors GetWaterColor => Helpers.Oneof(PlanetAssetLookup.WaterColors.LightBlueWater, PlanetAssetLookup.WaterColors.DarkBlueWater);
-	public virtual PlanetAssetLookup.AtmosphereColors GetAtmosphereColor => Helpers.Oneof(PlanetAssetLookup.AtmosphereColors.LightAtmosphere);
+	public virtual MaterialLookup.PlanetTextures GetHeights => Helpers.Oneof(MaterialLookup.PlanetTextures.HeightsContinental);
+	public virtual MaterialLookup.DetailsTextures GetDetails => Helpers.Oneof(MaterialLookup.DetailsTextures.DetailsFlatter, MaterialLookup.DetailsTextures.DetailsRegular);
+	public virtual MaterialLookup.VegitationColors GetVegitationColor => Helpers.Oneof(MaterialLookup.VegitationColors.AridDarkBrown);
+	public virtual MaterialLookup.WaterColors GetWaterColor => Helpers.Oneof(MaterialLookup.WaterColors.LightBlueWater, MaterialLookup.WaterColors.DarkBlueWater);
+	public virtual MaterialLookup.AtmosphereColors GetAtmosphereColor => Helpers.Oneof(MaterialLookup.AtmosphereColors.LightAtmosphere);
 	public int Seed => Random.Range(0, 1000);
 
 	public BiomeData GenerateBiome()
@@ -49,15 +49,15 @@ public class Continental : BiomeGenerator
 	public override float FrostLevel => Random.Range(normalFrost - .05f, normalFrost + .05f);
 	public override float WaterLevel => Random.Range(regularWater - .05f, regularWater + .05f);
 
-	public override PlanetAssetLookup.PlanetTextures GetHeights => Helpers.Oneof(
-		PlanetAssetLookup.PlanetTextures.HeightsRegular,
-		PlanetAssetLookup.PlanetTextures.HeightsContinental
+	public override MaterialLookup.PlanetTextures GetHeights => Helpers.Oneof(
+		MaterialLookup.PlanetTextures.HeightsRegular,
+		MaterialLookup.PlanetTextures.HeightsContinental
 	);
 
-	public override PlanetAssetLookup.VegitationColors GetVegitationColor => Helpers.Oneof(
-		PlanetAssetLookup.VegitationColors.PlainsGreenish,
-		PlanetAssetLookup.VegitationColors.PlainsYellowish,
-		PlanetAssetLookup.VegitationColors.JungleLightGreen
+	public override MaterialLookup.VegitationColors GetVegitationColor => Helpers.Oneof(
+		MaterialLookup.VegitationColors.PlainsGreenish,
+		MaterialLookup.VegitationColors.PlainsYellowish,
+		MaterialLookup.VegitationColors.JungleLightGreen
 	);
 }
 
@@ -68,15 +68,15 @@ public class Desert : BiomeGenerator
 	public override float FrostLevel => Random.Range(0, normalFrost);
 	public override float WaterLevel => Random.Range(noWater, noWater + .045f);
 
-	public override PlanetAssetLookup.PlanetTextures GetHeights => Helpers.Oneof(
-		PlanetAssetLookup.PlanetTextures.HeightsRegular,
-		PlanetAssetLookup.PlanetTextures.HeightsContinental
+	public override MaterialLookup.PlanetTextures GetHeights => Helpers.Oneof(
+		MaterialLookup.PlanetTextures.HeightsRegular,
+		MaterialLookup.PlanetTextures.HeightsContinental
 	);
 
-	public override PlanetAssetLookup.VegitationColors GetVegitationColor => Helpers.Oneof(
-		PlanetAssetLookup.VegitationColors.AridLightBrown,
-		PlanetAssetLookup.VegitationColors.DesertWhite,
-		PlanetAssetLookup.VegitationColors.DesertYellow
+	public override MaterialLookup.VegitationColors GetVegitationColor => Helpers.Oneof(
+		MaterialLookup.VegitationColors.AridLightBrown,
+		MaterialLookup.VegitationColors.DesertWhite,
+		MaterialLookup.VegitationColors.DesertYellow
 	);
 }
 
@@ -88,15 +88,15 @@ public class Dead : BiomeGenerator
 	public override float WaterLevel => 0;
 	public override float Size => .1f;
 
-	public override PlanetAssetLookup.PlanetTextures GetHeights => Helpers.Oneof(
-		PlanetAssetLookup.PlanetTextures.HeightsCraters
+	public override MaterialLookup.PlanetTextures GetHeights => Helpers.Oneof(
+		MaterialLookup.PlanetTextures.HeightsCraters
 	);
 
-	public override PlanetAssetLookup.VegitationColors GetVegitationColor => Helpers.Oneof(
-		PlanetAssetLookup.VegitationColors.MoltonAshDark,
-		PlanetAssetLookup.VegitationColors.MoltonAshLight,
-		PlanetAssetLookup.VegitationColors.DeadGray,
-		PlanetAssetLookup.VegitationColors.DeadRust
+	public override MaterialLookup.VegitationColors GetVegitationColor => Helpers.Oneof(
+		MaterialLookup.VegitationColors.MoltonAshDark,
+		MaterialLookup.VegitationColors.MoltonAshLight,
+		MaterialLookup.VegitationColors.DeadGray,
+		MaterialLookup.VegitationColors.DeadRust
 	);
 }
 
@@ -107,14 +107,14 @@ public class Jungle : BiomeGenerator
 	public override float FrostLevel => Random.Range(0, normalFrost);
 	public override float WaterLevel => Random.Range(regularWater - .05f, regularWater + .05f);
 
-	public override PlanetAssetLookup.PlanetTextures GetHeights => Helpers.Oneof(
-		PlanetAssetLookup.PlanetTextures.HeightsRegular,
-		PlanetAssetLookup.PlanetTextures.HeightsContinental
+	public override MaterialLookup.PlanetTextures GetHeights => Helpers.Oneof(
+		MaterialLookup.PlanetTextures.HeightsRegular,
+		MaterialLookup.PlanetTextures.HeightsContinental
 	);
 
-	public override PlanetAssetLookup.VegitationColors GetVegitationColor => Helpers.Oneof(
-		PlanetAssetLookup.VegitationColors.JungleDarkGreen,
-		PlanetAssetLookup.VegitationColors.JungleLightGreen
+	public override MaterialLookup.VegitationColors GetVegitationColor => Helpers.Oneof(
+		MaterialLookup.VegitationColors.JungleDarkGreen,
+		MaterialLookup.VegitationColors.JungleLightGreen
 	);
 }
 
@@ -125,15 +125,15 @@ public class Arid : BiomeGenerator
 	public override float FrostLevel => Random.Range(0, normalFrost);
 	public override float WaterLevel => Random.Range(noWater, noWater + .075f);
 
-	public override PlanetAssetLookup.PlanetTextures GetHeights => Helpers.Oneof(
-		PlanetAssetLookup.PlanetTextures.HeightsRegular,
-		PlanetAssetLookup.PlanetTextures.HeightsHigher
+	public override MaterialLookup.PlanetTextures GetHeights => Helpers.Oneof(
+		MaterialLookup.PlanetTextures.HeightsRegular,
+		MaterialLookup.PlanetTextures.HeightsHigher
 	);
 
-	public override PlanetAssetLookup.VegitationColors GetVegitationColor => Helpers.Oneof(
-		PlanetAssetLookup.VegitationColors.AridDarkBrown,
-		PlanetAssetLookup.VegitationColors.AridLightBrown,
-		PlanetAssetLookup.VegitationColors.AridMediumBrown
+	public override MaterialLookup.VegitationColors GetVegitationColor => Helpers.Oneof(
+		MaterialLookup.VegitationColors.AridDarkBrown,
+		MaterialLookup.VegitationColors.AridLightBrown,
+		MaterialLookup.VegitationColors.AridMediumBrown
 	);
 }
 
@@ -144,14 +144,14 @@ public class Arctic : BiomeGenerator
 	public override float FrostLevel => Random.Range(fullFrost - .12f, fullFrost);
 	public override float WaterLevel => Random.Range(regularWater - .05f, regularWater + .05f);
 
-	public override PlanetAssetLookup.PlanetTextures GetHeights => Helpers.Oneof(
-		PlanetAssetLookup.PlanetTextures.HeightsRegular,
-		PlanetAssetLookup.PlanetTextures.HeightsCraters
+	public override MaterialLookup.PlanetTextures GetHeights => Helpers.Oneof(
+		MaterialLookup.PlanetTextures.HeightsRegular,
+		MaterialLookup.PlanetTextures.HeightsCraters
 	);
 
-	public override PlanetAssetLookup.VegitationColors GetVegitationColor => Helpers.Oneof(
-		PlanetAssetLookup.VegitationColors.ArcticWhite,
-		PlanetAssetLookup.VegitationColors.ArcticBluishWhite
+	public override MaterialLookup.VegitationColors GetVegitationColor => Helpers.Oneof(
+		MaterialLookup.VegitationColors.ArcticWhite,
+		MaterialLookup.VegitationColors.ArcticBluishWhite
 	);
 }
 
@@ -163,23 +163,23 @@ public class Molten : BiomeGenerator
 	public override float WaterLevel => Random.Range(regularWater - .05f, regularWater + .05f);
 	public override bool EmissiveWater => true;
 
-	public override PlanetAssetLookup.PlanetTextures GetHeights => Helpers.Oneof(
-		PlanetAssetLookup.PlanetTextures.HeightsRegular,
-		PlanetAssetLookup.PlanetTextures.HeightsContinental,
-		PlanetAssetLookup.PlanetTextures.HeightsHigher
+	public override MaterialLookup.PlanetTextures GetHeights => Helpers.Oneof(
+		MaterialLookup.PlanetTextures.HeightsRegular,
+		MaterialLookup.PlanetTextures.HeightsContinental,
+		MaterialLookup.PlanetTextures.HeightsHigher
 	);
 
-	public override PlanetAssetLookup.VegitationColors GetVegitationColor => Helpers.Oneof(
-		PlanetAssetLookup.VegitationColors.MoltonAshDark,
-		PlanetAssetLookup.VegitationColors.MoltonAshLight
+	public override MaterialLookup.VegitationColors GetVegitationColor => Helpers.Oneof(
+		MaterialLookup.VegitationColors.MoltonAshDark,
+		MaterialLookup.VegitationColors.MoltonAshLight
 	);
 
-	public override PlanetAssetLookup.WaterColors GetWaterColor => Helpers.Oneof(
-		PlanetAssetLookup.WaterColors.DarkLava,
-		PlanetAssetLookup.WaterColors.LightLava
+	public override MaterialLookup.WaterColors GetWaterColor => Helpers.Oneof(
+		MaterialLookup.WaterColors.DarkLava,
+		MaterialLookup.WaterColors.LightLava
 	);
 
-	public override PlanetAssetLookup.AtmosphereColors GetAtmosphereColor => PlanetAssetLookup.AtmosphereColors.LavaAtmosphere;
+	public override MaterialLookup.AtmosphereColors GetAtmosphereColor => MaterialLookup.AtmosphereColors.LavaAtmosphere;
 }
 
 public class Alpine : BiomeGenerator
@@ -189,12 +189,12 @@ public class Alpine : BiomeGenerator
 	public override float FrostLevel => Random.Range(fullFrost - .2f, fullFrost - .12f);
 	public override float WaterLevel => Random.Range(regularWater - .05f, regularWater + .05f);
 
-	public override PlanetAssetLookup.PlanetTextures GetHeights => Helpers.Oneof(
-		PlanetAssetLookup.PlanetTextures.HeightsRegular,
-		PlanetAssetLookup.PlanetTextures.HeightsContinental
+	public override MaterialLookup.PlanetTextures GetHeights => Helpers.Oneof(
+		MaterialLookup.PlanetTextures.HeightsRegular,
+		MaterialLookup.PlanetTextures.HeightsContinental
 	);
 
-	public override PlanetAssetLookup.VegitationColors GetVegitationColor => Helpers.Oneof(
-		PlanetAssetLookup.VegitationColors.AlpineForest
+	public override MaterialLookup.VegitationColors GetVegitationColor => Helpers.Oneof(
+		MaterialLookup.VegitationColors.AlpineForest
 	);
 }

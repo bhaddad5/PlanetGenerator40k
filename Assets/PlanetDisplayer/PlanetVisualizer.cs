@@ -41,7 +41,7 @@ public class PlanetVisualizer : MonoBehaviour
 
 	private void SetupBiome(BiomeData biome)
 	{
-		var matLookup = AssetLookup.Instance.PlanetAssetLookup;
+		var matLookup = AssetLookup.Instance.MaterialLookup;
 		biomeVis.HeightMap = matLookup.GetPlanetTexture(biome.Heights).Heights;
 		biomeVis.NormalsMap = matLookup.GetPlanetTexture(biome.Heights).HeightsNormal;
 		biomeVis.DetailsMap = matLookup.GetDetailsTexture(biome.Details);

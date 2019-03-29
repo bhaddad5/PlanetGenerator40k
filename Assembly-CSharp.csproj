@@ -102,7 +102,8 @@
     <Compile Include="Assets\PlanetAuthoring\Helpers.cs" />
     <Compile Include="Assets\PlanetAuthoring\PlanetAuthor.cs" />
     <Compile Include="Assets\PlanetDisplayer\AssetLookup.cs" />
-    <Compile Include="Assets\PlanetDisplayer\PlanetAssetLookup.cs" />
+    <Compile Include="Assets\PlanetDisplayer\MaterialLookup.cs" />
+    <Compile Include="Assets\PlanetDisplayer\ObjectLookup.cs" />
     <Compile Include="Assets\PlanetDisplayer\PlanetRotator.cs" />
     <Compile Include="Assets\PlanetDisplayer\PlanetVisualizer.cs" />
     <Compile Include="Assets\PlanetDisplayer\Star\StarLightHandler.cs" />

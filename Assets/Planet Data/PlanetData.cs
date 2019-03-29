@@ -41,13 +41,13 @@ public class PlanetGeoData
 public class BiomeData
 {
 	public string Description;
-	public PlanetAssetLookup.PlanetTextures Heights;
-	public PlanetAssetLookup.DetailsTextures Details;
+	public MaterialLookup.PlanetTextures Heights;
+	public MaterialLookup.DetailsTextures Details;
 	public float FrostLevel;
 	public float WaterLevel;
-	public PlanetAssetLookup.VegitationColors VegitationColor;
-	public PlanetAssetLookup.WaterColors WaterColor;
-	public PlanetAssetLookup.AtmosphereColors AtmosphereColor;
+	public MaterialLookup.VegitationColors VegitationColor;
+	public MaterialLookup.WaterColors WaterColor;
+	public MaterialLookup.AtmosphereColors AtmosphereColor;
 	public bool EmissiveWater;
 	public float Size;
 	public int Seed;

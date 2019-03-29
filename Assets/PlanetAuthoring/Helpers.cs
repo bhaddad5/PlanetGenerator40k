@@ -8,4 +8,9 @@ public static class Helpers
 	{
 		return options[Random.Range(0, options.Length)];
 	}
+
+	public static T GetRandom<T>(this List<T> list)
+	{
+		return list[Random.Range(0, list.Count)];
+	}
 }

@@ -16,6 +16,8 @@ public class PlanetAuthor : MonoBehaviour
 	public TMP_InputField SizeInputField;
 	public TMP_InputField RotSpeedInputField;
 	public Toggle IsMoon;
+	public TMP_Dropdown DoodadDropdown;
+	public TMP_InputField DistrictLevel;
 
 	private PlanetData currentPlanetData;
 
@@ -49,7 +51,6 @@ public class PlanetAuthor : MonoBehaviour
 
 	public GameObject Cursor;
 	public Camera MainCamera;
-	public GameObject TmpPlacementPrefab;
 
 	public void Update()
 	{
@@ -61,7 +62,10 @@ public class PlanetAuthor : MonoBehaviour
 
 			if (Input.GetKeyDown(KeyCode.Mouse0))
 			{
-				var tmpObject = GameObject.Instantiate(TmpPlacementPrefab);
+				int lvl = Int32.Parse(DistrictLevel.text);
+				GameObject prefab = AssetLookup.Instance.ObjectLookup.GetByIdAndLevel(DoodadDropdown.options[DoodadDropdown.value].text,lvl);
+
+				var tmpObject = GameObject.Instantiate(prefab);
 				tmpObject.transform.SetParent(currPlanet.transform.GetChild(0));
 				tmpObject.transform.position = hit.point;
 				tmpObject.transform.LookAt(currPlanet.transform.GetChild(0));
